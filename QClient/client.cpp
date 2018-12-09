@@ -83,3 +83,39 @@ void Client::displaypms(const std::string &username,std::vector<Pokemon*>& vec)
         }
     }
 }
+void Client::UserLoss(User* uptr)
+{
+	char buffer[10] = "LOSS1";
+	::send(client, buffer, sizeof(buffer), 0);
+}
+void Client::UserWin(User* uptr, std::vector<Pokemon*> &vec)
+{
+	char buffer[10] = "WIN1";
+	::send(client, buffer, sizeof(buffer), 0);
+	UserInfo user;
+	strcpy(user.username,uptr->username.c_str());
+	strcpy(user.password, uptr->password.c_str());
+	user.WinNum = uptr->WinNum;
+	user.LossNum = uptr->LossNum;
+	user.PmNum = uptr->PmNum;
+	user.PerPmNum = uptr->PerPmNum;
+	PMList pmlist[MAX_PMS];
+	int j = 0;
+	for (auto i = vec.begin(); i != vec.end(); i++)
+	{
+		j++;
+		pmlist[j].onlyid = (*i)->onlyid;
+		pmlist[j].grade = (*i)->grade;
+		pmlist[j].exp = (*i)->Exp;
+		pmlist[j].skills = (*i)->al_have_skills;
+		pmlist[j].skillbar[0] = (*i)->skill_bar[0];
+		pmlist[j].skillbar[1] = (*i)->skill_bar[1];
+		pmlist[j].skillbar[2] = (*i)->skill_bar[2];
+		pmlist[j].skillbar[3] = (*i)->skill_bar[3];
+	}
+	pmlist[0].num = j;
+	::recv(client, buffer, sizeof(buffer), 0);
+	::send(client, (char*)&user, sizeof(UserInfo), 0);
+	::recv(client, buffer, sizeof(buffer), 0);
+	::send(client, (char*)pmlist, sizeof(PMList)*(pmlist[0].num + 1), 0);
+}

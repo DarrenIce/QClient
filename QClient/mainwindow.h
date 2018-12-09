@@ -21,12 +21,19 @@ public:
     void showpms(const std::string &username);
 	void ChangeUserOp(QListWidgetItem *item);
 	void ChangePmOp();
-	void Fight1();
+	
 public slots:
 	void CreatePm();
+	void SkillBar1();
+	void SkillBar2();
+	void SkillBar3();
+	void SkillBar4();
+	void Fight1();
 signals:
     void displaypms(const std::string &username,std::vector<Pokemon*> &vec);
 	void LoginInfo(const std::string &username, const std::string &password, int &state, UserInfo &userinfo);
+	void UserLoss(User* uptr);
+	void UserWin(User* uptr, std::vector<Pokemon*> &vec);
 private:
     Ui::MainWindow *ui;
 };

@@ -1,5 +1,5 @@
-#include "pokemons.h"
-//ÃîÍÜÖÖ×Ó¡¢½ÜÄá¹ê¡¢Ğ¡»ğÁú¡¢²¨²¨¡¢Æ¤¿¨Çğ¡¢Æ¤Æ¤
+ï»¿#include "pokemons.h"
+//å¦™è›™ç§å­ã€æ°å°¼é¾Ÿã€å°ç«é¾™ã€æ³¢æ³¢ã€çš®å¡ä¸˜ã€çš®çš®
 Venusaur::Venusaur()
 {
 	id = 3;
@@ -8,16 +8,16 @@ Venusaur::Venusaur()
 	Ppt = Grass;
 	Ppt2 = Poison;
 	isside = true;
-	//ÃîÍÜ»¨ÖÖ×åÖµ
+	//å¦™è›™èŠ±ç§æ—å€¼
 	Phy.RacialValue = 80;
 	Str.RacialValue = 82;
 	Sta.RacialValue = 83;
 	Int.RacialValue = 100;
 	Res.RacialValue = 100;
 	Agi.RacialValue = 80;
-	//ÄÜÁ¦Ãæ°åÖµ³õÊ¼»¯
+	//èƒ½åŠ›é¢æ¿å€¼åˆå§‹åŒ–
 	map();
-	//¼¼ÄÜ³õÊ¼»¯
+	//æŠ€èƒ½åˆå§‹åŒ–
 	Attack.ppt = Ppt;
 	al_have_skills = 0;
 	skill_list[0] = 0;
@@ -52,16 +52,16 @@ Venusaur::Venusaur(int level)
 	Ppt2 = Poison;
 	grade = level;
 	isside = true;
-	//ÃîÍÜ»¨ÖÖ×åÖµ
+	//å¦™è›™èŠ±ç§æ—å€¼
 	Phy.RacialValue = 80;
 	Str.RacialValue = 82;
 	Sta.RacialValue = 83;
 	Int.RacialValue = 100;
 	Res.RacialValue = 100;
 	Agi.RacialValue = 80;
-	//ÄÜÁ¦Ãæ°åÖµ³õÊ¼»¯
+	//èƒ½åŠ›é¢æ¿å€¼åˆå§‹åŒ–
 	map();
-	//¼¼ÄÜ³õÊ¼»¯
+	//æŠ€èƒ½åˆå§‹åŒ–
 	Attack.ppt = Ppt;
 	al_have_skills = 0;
 	skill_list[0] = 0;
@@ -95,6 +95,7 @@ Venusaur::Venusaur(int level)
 Venusaur::Venusaur(PMList pmlist)
 {
 	id = pmlist.id;
+	onlyid = pmlist.onlyid;
 	name = "Venusaur";
 	nicky = pmlist.nicky;
 	switch (pmlist.nature)
@@ -198,9 +199,9 @@ Charizard::Charizard()
 	Int.RacialValue = 109;
 	Res.RacialValue = 85;
 	Agi.RacialValue = 100;
-	//ÄÜÁ¦Ãæ°åÖµ³õÊ¼»¯
+	//èƒ½åŠ›é¢æ¿å€¼åˆå§‹åŒ–
 	map();
-	//¼¼ÄÜ³õÊ¼»¯
+	//æŠ€èƒ½åˆå§‹åŒ–
 	Attack.ppt = Ppt;
 	al_have_skills = 0;
 	skill_list[0] = 12;
@@ -242,9 +243,9 @@ Charizard::Charizard(int level)
 	Int.RacialValue = 109;
 	Res.RacialValue = 85;
 	Agi.RacialValue = 100;
-	//ÄÜÁ¦Ãæ°åÖµ³õÊ¼»¯
+	//èƒ½åŠ›é¢æ¿å€¼åˆå§‹åŒ–
 	map();
-	//¼¼ÄÜ³õÊ¼»¯
+	//æŠ€èƒ½åˆå§‹åŒ–
 	Attack.ppt = Ppt;
 	al_have_skills = 0;
 	skill_list[0] = 12;
@@ -281,6 +282,7 @@ Charizard::Charizard(int level)
 Charizard::Charizard(PMList pmlist)
 {
 	id = pmlist.id;
+	onlyid = pmlist.onlyid;
 	name = "Charizard";
 	nicky = pmlist.nicky;
 	switch (pmlist.nature)
@@ -379,16 +381,16 @@ Blastoise::Blastoise()
 	nicky = "Blastoise";
 	Ppt = Water;
 	isside = false;
-	//ÃîÍÜ»¨ÖÖ×åÖµ
+	//å¦™è›™èŠ±ç§æ—å€¼
 	Phy.RacialValue = 79;
 	Str.RacialValue = 83;
 	Sta.RacialValue = 100;
 	Int.RacialValue = 85;
 	Res.RacialValue = 105;
 	Agi.RacialValue = 78;
-	//ÄÜÁ¦Ãæ°åÖµ³õÊ¼»¯
+	//èƒ½åŠ›é¢æ¿å€¼åˆå§‹åŒ–
 	map();
-	//¼¼ÄÜ³õÊ¼»¯
+	//æŠ€èƒ½åˆå§‹åŒ–
 	Attack.ppt = Ppt;
 	al_have_skills = 0;
 	skill_list[0] = 26;
@@ -429,9 +431,9 @@ Blastoise::Blastoise(int level)
 	Int.RacialValue = 85;
 	Res.RacialValue = 105;
 	Agi.RacialValue = 78;
-	//ÄÜÁ¦Ãæ°åÖµ³õÊ¼»¯
+	//èƒ½åŠ›é¢æ¿å€¼åˆå§‹åŒ–
 	map();
-	//¼¼ÄÜ³õÊ¼»¯
+	//æŠ€èƒ½åˆå§‹åŒ–
 	Attack.ppt = Ppt;
 	al_have_skills = 0;
 	skill_list[0] = 26;
@@ -466,6 +468,7 @@ Blastoise::Blastoise(int level)
 Blastoise::Blastoise(PMList pmlist)
 {
 	id = pmlist.id;
+	onlyid = pmlist.onlyid;
 	name = "Blastoise";
 	nicky = pmlist.nicky;
 	switch (pmlist.nature)

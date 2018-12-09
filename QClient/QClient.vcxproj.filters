@@ -36,17 +36,17 @@
     <ClCompile Include="mainwindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="loginwindow.cpp">
-      <Filter>Resource Files</Filter>
+    <ClCompile Include="pokemons.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="pokemon.cpp">
-      <Filter>Resource Files</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pokemons.cpp">
-      <Filter>Resource Files</Filter>
+    <ClCompile Include="loginwindow.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="client.cpp">
-      <Filter>Resource Files</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -66,11 +66,6 @@
     </QtUic>
   </ItemGroup>
   <ItemGroup>
-    <QtRcc Include="mainwindow.qrc">
-      <Filter>Resource Files</Filter>
-    </QtRcc>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="pokemon.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -80,5 +75,10 @@
     <ClInclude Include="InitSock.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="mainwindow.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
   </ItemGroup>
 </Project>

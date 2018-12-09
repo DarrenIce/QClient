@@ -20,6 +20,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpinBox>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
 
@@ -112,7 +113,7 @@ public:
     QLabel *Ppic;
     QLabel *PMpic;
     QWidget *formLayoutWidget_3;
-    QFormLayout *formLayout;
+    QFormLayout *UserInfo;
     QLabel *UserName;
     QLabel *username;
     QLabel *WinNum;
@@ -133,6 +134,7 @@ public:
     QLabel *titel2;
     QLabel *Titel3;
     QLabel *titel3;
+    QTextBrowser *FightInfo;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -146,7 +148,7 @@ public:
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         PMList = new QListWidget(centralWidget);
         PMList->setObjectName(QString::fromUtf8("PMList"));
-        PMList->setGeometry(QRect(230, 0, 161, 271));
+        PMList->setGeometry(QRect(170, 0, 161, 271));
         formLayoutWidget = new QWidget(centralWidget);
         formLayoutWidget->setObjectName(QString::fromUtf8("formLayoutWidget"));
         formLayoutWidget->setGeometry(QRect(10, 280, 161, 356));
@@ -337,46 +339,73 @@ public:
 
         UpgradeMatch = new QPushButton(centralWidget);
         UpgradeMatch->setObjectName(QString::fromUtf8("UpgradeMatch"));
-        UpgradeMatch->setGeometry(QRect(720, 190, 91, 23));
+        UpgradeMatch->setGeometry(QRect(730, 590, 91, 23));
+        UpgradeMatch->setStyleSheet(QString::fromUtf8("QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }"));
         DuelMatch = new QPushButton(centralWidget);
         DuelMatch->setObjectName(QString::fromUtf8("DuelMatch"));
-        DuelMatch->setGeometry(QRect(720, 220, 91, 23));
+        DuelMatch->setGeometry(QRect(730, 620, 91, 23));
+        DuelMatch->setStyleSheet(QString::fromUtf8("QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }"));
         UserHp = new QProgressBar(centralWidget);
         UserHp->setObjectName(QString::fromUtf8("UserHp"));
         UserHp->setGeometry(QRect(180, 280, 251, 20));
+        UserHp->setStyleSheet(QString::fromUtf8("QProgressBar {\n"
+"     border: 2px solid grey;\n"
+"     border-radius: 5px;\n"
+"     text-align: center;\n"
+" }\n"
+" \n"
+" QProgressBar::chunk {\n"
+"     background-color: rgb(255, 85, 127);\n"
+"     width: 20px;\n"
+" }"));
         UserHp->setValue(100);
+        UserHp->setInvertedAppearance(false);
         PmHp = new QProgressBar(centralWidget);
         PmHp->setObjectName(QString::fromUtf8("PmHp"));
         PmHp->setGeometry(QRect(540, 280, 251, 23));
+        PmHp->setStyleSheet(QString::fromUtf8("QProgressBar {\n"
+"     border: 2px solid grey;\n"
+"     border-radius: 5px;\n"
+"     text-align: center;\n"
+" }\n"
+" \n"
+" QProgressBar::chunk {\n"
+"     background-color: rgb(255, 85, 127);\n"
+"     width: 20px;\n"
+" }"));
         PmHp->setValue(100);
         Skill1 = new QPushButton(centralWidget);
         Skill1->setObjectName(QString::fromUtf8("Skill1"));
         Skill1->setGeometry(QRect(300, 550, 75, 23));
+        Skill1->setStyleSheet(QString::fromUtf8("QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }"));
         Skill2 = new QPushButton(centralWidget);
         Skill2->setObjectName(QString::fromUtf8("Skill2"));
         Skill2->setGeometry(QRect(390, 550, 75, 23));
+        Skill2->setStyleSheet(QString::fromUtf8("QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }"));
         Skill3 = new QPushButton(centralWidget);
         Skill3->setObjectName(QString::fromUtf8("Skill3"));
         Skill3->setGeometry(QRect(480, 550, 75, 23));
+        Skill3->setStyleSheet(QString::fromUtf8("QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }"));
         Skill4 = new QPushButton(centralWidget);
         Skill4->setObjectName(QString::fromUtf8("Skill4"));
         Skill4->setGeometry(QRect(570, 550, 75, 23));
+        Skill4->setStyleSheet(QString::fromUtf8("QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }"));
         IdBox = new QSpinBox(centralWidget);
         IdBox->setObjectName(QString::fromUtf8("IdBox"));
-        IdBox->setGeometry(QRect(920, 140, 42, 22));
+        IdBox->setGeometry(QRect(930, 540, 42, 22));
         IdBox->setMinimum(1);
         IdBox->setMaximum(999);
         PM_ID = new QLabel(centralWidget);
         PM_ID->setObjectName(QString::fromUtf8("PM_ID"));
-        PM_ID->setGeometry(QRect(860, 140, 54, 12));
+        PM_ID->setGeometry(QRect(870, 540, 54, 12));
         LevelBox = new QSpinBox(centralWidget);
         LevelBox->setObjectName(QString::fromUtf8("LevelBox"));
-        LevelBox->setGeometry(QRect(920, 170, 42, 22));
+        LevelBox->setGeometry(QRect(930, 570, 42, 22));
         LevelBox->setMinimum(1);
         LevelBox->setMaximum(100);
         PM_LEVEL = new QLabel(centralWidget);
         PM_LEVEL->setObjectName(QString::fromUtf8("PM_LEVEL"));
-        PM_LEVEL->setGeometry(QRect(860, 170, 54, 12));
+        PM_LEVEL->setGeometry(QRect(870, 570, 54, 12));
         formLayoutWidget_2 = new QWidget(centralWidget);
         formLayoutWidget_2->setObjectName(QString::fromUtf8("formLayoutWidget_2"));
         formLayoutWidget_2->setGeometry(QRect(810, 270, 178, 256));
@@ -517,7 +546,8 @@ public:
 
         CreatePm = new QPushButton(centralWidget);
         CreatePm->setObjectName(QString::fromUtf8("CreatePm"));
-        CreatePm->setGeometry(QRect(890, 210, 75, 23));
+        CreatePm->setGeometry(QRect(900, 610, 75, 23));
+        CreatePm->setStyleSheet(QString::fromUtf8("QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }"));
         Ppic = new QLabel(centralWidget);
         Ppic->setObjectName(QString::fromUtf8("Ppic"));
         Ppic->setGeometry(QRect(270, 400, 54, 12));
@@ -527,111 +557,114 @@ public:
         formLayoutWidget_3 = new QWidget(centralWidget);
         formLayoutWidget_3->setObjectName(QString::fromUtf8("formLayoutWidget_3"));
         formLayoutWidget_3->setGeometry(QRect(10, 0, 161, 271));
-        formLayout = new QFormLayout(formLayoutWidget_3);
-        formLayout->setSpacing(6);
-        formLayout->setContentsMargins(11, 11, 11, 11);
-        formLayout->setObjectName(QString::fromUtf8("formLayout"));
-        formLayout->setContentsMargins(0, 0, 0, 0);
+        UserInfo = new QFormLayout(formLayoutWidget_3);
+        UserInfo->setSpacing(6);
+        UserInfo->setContentsMargins(11, 11, 11, 11);
+        UserInfo->setObjectName(QString::fromUtf8("UserInfo"));
+        UserInfo->setContentsMargins(0, 0, 0, 0);
         UserName = new QLabel(formLayoutWidget_3);
         UserName->setObjectName(QString::fromUtf8("UserName"));
 
-        formLayout->setWidget(0, QFormLayout::LabelRole, UserName);
+        UserInfo->setWidget(0, QFormLayout::LabelRole, UserName);
 
         username = new QLabel(formLayoutWidget_3);
         username->setObjectName(QString::fromUtf8("username"));
 
-        formLayout->setWidget(0, QFormLayout::FieldRole, username);
+        UserInfo->setWidget(0, QFormLayout::FieldRole, username);
 
         WinNum = new QLabel(formLayoutWidget_3);
         WinNum->setObjectName(QString::fromUtf8("WinNum"));
 
-        formLayout->setWidget(1, QFormLayout::LabelRole, WinNum);
+        UserInfo->setWidget(1, QFormLayout::LabelRole, WinNum);
 
         winnum = new QLabel(formLayoutWidget_3);
         winnum->setObjectName(QString::fromUtf8("winnum"));
 
-        formLayout->setWidget(1, QFormLayout::FieldRole, winnum);
+        UserInfo->setWidget(1, QFormLayout::FieldRole, winnum);
 
         LossNum = new QLabel(formLayoutWidget_3);
         LossNum->setObjectName(QString::fromUtf8("LossNum"));
 
-        formLayout->setWidget(2, QFormLayout::LabelRole, LossNum);
+        UserInfo->setWidget(2, QFormLayout::LabelRole, LossNum);
 
         lossnum = new QLabel(formLayoutWidget_3);
         lossnum->setObjectName(QString::fromUtf8("lossnum"));
 
-        formLayout->setWidget(2, QFormLayout::FieldRole, lossnum);
+        UserInfo->setWidget(2, QFormLayout::FieldRole, lossnum);
 
         WinRate = new QLabel(formLayoutWidget_3);
         WinRate->setObjectName(QString::fromUtf8("WinRate"));
 
-        formLayout->setWidget(3, QFormLayout::LabelRole, WinRate);
+        UserInfo->setWidget(3, QFormLayout::LabelRole, WinRate);
 
         winrate = new QLabel(formLayoutWidget_3);
         winrate->setObjectName(QString::fromUtf8("winrate"));
 
-        formLayout->setWidget(3, QFormLayout::FieldRole, winrate);
+        UserInfo->setWidget(3, QFormLayout::FieldRole, winrate);
 
         PMNum = new QLabel(formLayoutWidget_3);
         PMNum->setObjectName(QString::fromUtf8("PMNum"));
 
-        formLayout->setWidget(4, QFormLayout::LabelRole, PMNum);
+        UserInfo->setWidget(4, QFormLayout::LabelRole, PMNum);
 
         pmnum = new QLabel(formLayoutWidget_3);
         pmnum->setObjectName(QString::fromUtf8("pmnum"));
 
-        formLayout->setWidget(4, QFormLayout::FieldRole, pmnum);
+        UserInfo->setWidget(4, QFormLayout::FieldRole, pmnum);
 
         FullLevel = new QLabel(formLayoutWidget_3);
         FullLevel->setObjectName(QString::fromUtf8("FullLevel"));
 
-        formLayout->setWidget(5, QFormLayout::LabelRole, FullLevel);
+        UserInfo->setWidget(5, QFormLayout::LabelRole, FullLevel);
 
         fulllevel = new QLabel(formLayoutWidget_3);
         fulllevel->setObjectName(QString::fromUtf8("fulllevel"));
 
-        formLayout->setWidget(5, QFormLayout::FieldRole, fulllevel);
+        UserInfo->setWidget(5, QFormLayout::FieldRole, fulllevel);
 
         AchiNum = new QLabel(formLayoutWidget_3);
         AchiNum->setObjectName(QString::fromUtf8("AchiNum"));
 
-        formLayout->setWidget(6, QFormLayout::LabelRole, AchiNum);
+        UserInfo->setWidget(6, QFormLayout::LabelRole, AchiNum);
 
         achinum = new QLabel(formLayoutWidget_3);
         achinum->setObjectName(QString::fromUtf8("achinum"));
 
-        formLayout->setWidget(6, QFormLayout::FieldRole, achinum);
+        UserInfo->setWidget(6, QFormLayout::FieldRole, achinum);
 
         Titel1 = new QLabel(formLayoutWidget_3);
         Titel1->setObjectName(QString::fromUtf8("Titel1"));
 
-        formLayout->setWidget(7, QFormLayout::LabelRole, Titel1);
+        UserInfo->setWidget(7, QFormLayout::LabelRole, Titel1);
 
         titel1 = new QLabel(formLayoutWidget_3);
         titel1->setObjectName(QString::fromUtf8("titel1"));
 
-        formLayout->setWidget(7, QFormLayout::FieldRole, titel1);
+        UserInfo->setWidget(7, QFormLayout::FieldRole, titel1);
 
         Titel2 = new QLabel(formLayoutWidget_3);
         Titel2->setObjectName(QString::fromUtf8("Titel2"));
 
-        formLayout->setWidget(8, QFormLayout::LabelRole, Titel2);
+        UserInfo->setWidget(8, QFormLayout::LabelRole, Titel2);
 
         titel2 = new QLabel(formLayoutWidget_3);
         titel2->setObjectName(QString::fromUtf8("titel2"));
 
-        formLayout->setWidget(8, QFormLayout::FieldRole, titel2);
+        UserInfo->setWidget(8, QFormLayout::FieldRole, titel2);
 
         Titel3 = new QLabel(formLayoutWidget_3);
         Titel3->setObjectName(QString::fromUtf8("Titel3"));
 
-        formLayout->setWidget(9, QFormLayout::LabelRole, Titel3);
+        UserInfo->setWidget(9, QFormLayout::LabelRole, Titel3);
 
         titel3 = new QLabel(formLayoutWidget_3);
         titel3->setObjectName(QString::fromUtf8("titel3"));
 
-        formLayout->setWidget(9, QFormLayout::FieldRole, titel3);
+        UserInfo->setWidget(9, QFormLayout::FieldRole, titel3);
 
+        FightInfo = new QTextBrowser(centralWidget);
+        FightInfo->setObjectName(QString::fromUtf8("FightInfo"));
+        FightInfo->setGeometry(QRect(370, 0, 601, 261));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));

@@ -17,7 +17,7 @@
    <widget class="QListWidget" name="PMList">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>170</x>
       <y>0</y>
       <width>161</width>
       <height>271</height>
@@ -219,11 +219,14 @@
    <widget class="QPushButton" name="UpgradeMatch">
     <property name="geometry">
      <rect>
-      <x>720</x>
-      <y>190</y>
+      <x>730</x>
+      <y>590</y>
       <width>91</width>
       <height>23</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }</string>
     </property>
     <property name="text">
      <string>Upgrade Match</string>
@@ -232,11 +235,14 @@
    <widget class="QPushButton" name="DuelMatch">
     <property name="geometry">
      <rect>
-      <x>720</x>
-      <y>220</y>
+      <x>730</x>
+      <y>620</y>
       <width>91</width>
       <height>23</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }</string>
     </property>
     <property name="text">
      <string>Duel Match</string>
@@ -251,8 +257,23 @@
       <height>20</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QProgressBar {
+     border: 2px solid grey;
+     border-radius: 5px;
+     text-align: center;
+ }
+ 
+ QProgressBar::chunk {
+     background-color: rgb(255, 85, 127);
+     width: 20px;
+ }</string>
+    </property>
     <property name="value">
      <number>100</number>
+    </property>
+    <property name="invertedAppearance">
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QProgressBar" name="PmHp">
@@ -263,6 +284,18 @@
       <width>251</width>
       <height>23</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QProgressBar {
+     border: 2px solid grey;
+     border-radius: 5px;
+     text-align: center;
+ }
+ 
+ QProgressBar::chunk {
+     background-color: rgb(255, 85, 127);
+     width: 20px;
+ }</string>
     </property>
     <property name="value">
      <number>100</number>
@@ -277,6 +310,9 @@
       <height>23</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }</string>
+    </property>
     <property name="text">
      <string>PushButton</string>
     </property>
@@ -289,6 +325,9 @@
       <width>75</width>
       <height>23</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }</string>
     </property>
     <property name="text">
      <string>PushButton</string>
@@ -303,6 +342,9 @@
       <height>23</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }</string>
+    </property>
     <property name="text">
      <string>PushButton</string>
     </property>
@@ -316,6 +358,9 @@
       <height>23</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }</string>
+    </property>
     <property name="text">
      <string>PushButton</string>
     </property>
@@ -323,8 +368,8 @@
    <widget class="QSpinBox" name="IdBox">
     <property name="geometry">
      <rect>
-      <x>920</x>
-      <y>140</y>
+      <x>930</x>
+      <y>540</y>
       <width>42</width>
       <height>22</height>
      </rect>
@@ -339,8 +384,8 @@
    <widget class="QLabel" name="PM_ID">
     <property name="geometry">
      <rect>
-      <x>860</x>
-      <y>140</y>
+      <x>870</x>
+      <y>540</y>
       <width>54</width>
       <height>12</height>
      </rect>
@@ -352,8 +397,8 @@
    <widget class="QSpinBox" name="LevelBox">
     <property name="geometry">
      <rect>
-      <x>920</x>
-      <y>170</y>
+      <x>930</x>
+      <y>570</y>
       <width>42</width>
       <height>22</height>
      </rect>
@@ -368,8 +413,8 @@
    <widget class="QLabel" name="PM_LEVEL">
     <property name="geometry">
      <rect>
-      <x>860</x>
-      <y>170</y>
+      <x>870</x>
+      <y>570</y>
       <width>54</width>
       <height>12</height>
      </rect>
@@ -523,11 +568,14 @@
    <widget class="QPushButton" name="CreatePm">
     <property name="geometry">
      <rect>
-      <x>890</x>
-      <y>210</y>
+      <x>900</x>
+      <y>610</y>
       <width>75</width>
       <height>23</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }</string>
     </property>
     <property name="text">
      <string>Create PM</string>
@@ -568,7 +616,7 @@
       <height>271</height>
      </rect>
     </property>
-    <layout class="QFormLayout" name="formLayout">
+    <layout class="QFormLayout" name="UserInfo">
      <item row="0" column="0">
       <widget class="QLabel" name="UserName">
        <property name="text">
@@ -710,6 +758,16 @@
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QTextBrowser" name="FightInfo">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>0</y>
+      <width>601</width>
+      <height>261</height>
+     </rect>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">

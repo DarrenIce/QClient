@@ -9,7 +9,6 @@
 #include <QLabel>
 #include <QLineEdit>
 #include <QtWidgets>
-#include <vector>
 #include <regex>
 
 #define SER_PORT 4396
@@ -186,5 +185,7 @@ public:
     void SendLoginInfo(const std::string &username,const std::string &password,int &state, UserInfo &userinfo);
     void SendSignupInfo(const std::string &username,const std::string &password,int &state);
     void displaypms(const std::string &username,std::vector<Pokemon*> &vec);
+	void UserLoss(User* uptr);
+	void UserWin(User* uptr, std::vector<Pokemon*> &vec);
 };
 

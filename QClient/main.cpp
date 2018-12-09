@@ -10,6 +10,8 @@ int main(int argc, char *argv[])
     QObject::connect(mw,&MainWindow::LoginInfo,clt,&Client::SendLoginInfo);
     QObject::connect(mw->lw,&LoginWindow::SignupInfo,clt,&Client::SendSignupInfo);
     QObject::connect(mw,&MainWindow::displaypms,clt,&Client::displaypms);
+	QObject::connect(mw, &MainWindow::UserLoss, clt, &Client::UserLoss);
+	QObject::connect(mw, &MainWindow::UserWin, clt, &Client::UserWin);
     mw->setVisible(false);
     return a.exec();
 }

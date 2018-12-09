@@ -3,6 +3,7 @@
 #include<time.h>
 #include<stdio.h>
 #include<stdlib.h>
+#include<vector>
 #include<iostream>
 
 #define MAX_NAME 100
@@ -14,6 +15,7 @@
 //暂时不实现进化机制，直接为最终精灵的1级
 //暂时不考虑努力值
 //每个精灵初始化一个数组，表示从低等级到高等级会学会的技能编号
+//会心系统还没有加入
 enum PPT
 {
 	Normal=1,Fire,Bug,Water,//一般系，火系，虫系，水系
@@ -81,6 +83,7 @@ public:
 
 typedef struct pm {
     int num;
+	int onlyid;
     int id;
     int grade;
     int exp;
@@ -142,7 +145,6 @@ public:
 	int EvaBL;//回避率能力基础值
 	int EvaAl;//回避率能力实际值
 	//精灵战斗中附加的效果
-	//存储附加的效果，第一列存储效果名，第二列存储持续回合数
 	//effs存储附加效果数量
 	int effs[10];
 
@@ -175,38 +177,8 @@ public:
 	void FightInitial();
 	void FightModify();
 	double PptRestraint(PPT AnoPpt);//属性克制函数
-	void Fight(Pokemon* pm);
+	void Fight(Pokemon* pm,std::vector<std::string>&strs);
 	int SpeedMap();
 	int Accuracy(Pokemon* pm);
 };
 
-
-
-class DataSave {
-	std::string name;//精灵名称
-	int id;//精灵ID
-	std::string nicky;//昵称
-	int grade;//精灵等级
-	int Exp;//当前等级的经验值;
-	Nature nature;//性格
-	 //属性值
-	AttValue Str;//力量
-	AttValue Int;//智力
-	AttValue Phy;//体力
-	AttValue Sta;//耐力--对应物理防御
-	AttValue Res;//抗性--对应魔法防御
-	AttValue Agi;//敏捷
-	 //能力值（实际体现）
-	Stats Atk;//物理攻击
-	Stats Sat;//属性攻击
-	Stats Hp;	//血量
-	Stats Def;//物理防御
-	Stats Sdf;//属性防御
-	Stats Spe;//攻击间隔
-
-	PPT Ppt;//属性
-
-	int al_have_skills[1000];//已经拥有的技能：0号位存储已经有的技能数n，后续n个存储对应的技能编号
-	int skill_bar[5];//技能栏：0位存储技能栏有几个技能，1234存储技能
-	
-};
