@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>994</width>
+    <height>713</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QListWidget" name="PMList">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>0</y>
+      <width>161</width>
+      <height>271</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="formLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>280</y>
+      <width>161</width>
+      <height>356</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="UserOp">
+     <item row="0" column="0">
+      <widget class="QLabel" name="Name">
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="name"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="Id">
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="id"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="Nicky">
+       <property name="text">
+        <string>Nicky</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="nicky"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="Grade">
+       <property name="text">
+        <string>Grade</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="grade"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="Exp">
+       <property name="text">
+        <string>Exp</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLabel" name="exp"/>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="Nature">
+       <property name="text">
+        <string>Nature</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLabel" name="nature"/>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="Property">
+       <property name="text">
+        <string>Property</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLabel" name="property"/>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="Hp">
+       <property name="text">
+        <string>Hp</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLabel" name="hp"/>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="Atk">
+       <property name="text">
+        <string>Atk</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLabel" name="atk"/>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="Sat">
+       <property name="text">
+        <string>Sat</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QLabel" name="sat"/>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="Def">
+       <property name="text">
+        <string>Def</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QLabel" name="def"/>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLabel" name="Sdf">
+       <property name="text">
+        <string>Sdf</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="1">
+      <widget class="QLabel" name="sdf"/>
+     </item>
+     <item row="12" column="0">
+      <widget class="QLabel" name="Spe">
+       <property name="text">
+        <string>Spe</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="1">
+      <widget class="QLabel" name="spe"/>
+     </item>
+     <item row="13" column="0">
+      <widget class="QLabel" name="SkillNum">
+       <property name="text">
+        <string>SkillNum</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="1">
+      <widget class="QLabel" name="skillnum"/>
+     </item>
+     <item row="14" column="0">
+      <widget class="QLabel" name="SkillBar1">
+       <property name="text">
+        <string>SkillBar1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="1">
+      <widget class="QLabel" name="skillbar1"/>
+     </item>
+     <item row="15" column="0">
+      <widget class="QLabel" name="SkillBar2">
+       <property name="text">
+        <string>SkillBar2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="16" column="0">
+      <widget class="QLabel" name="SkillBar3">
+       <property name="text">
+        <string>SkillBar3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="17" column="0">
+      <widget class="QLabel" name="SkillBar4">
+       <property name="text">
+        <string>SkillBar4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="1">
+      <widget class="QLabel" name="skillbar2"/>
+     </item>
+     <item row="16" column="1">
+      <widget class="QLabel" name="skillbar3"/>
+     </item>
+     <item row="17" column="1">
+      <widget class="QLabel" name="skillbar4"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="UpgradeMatch">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>190</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Upgrade Match</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="DuelMatch">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>220</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Duel Match</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="UserHp">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>280</y>
+      <width>251</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>100</number>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="PmHp">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>280</y>
+      <width>251</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>100</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Skill1">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>550</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Skill2">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>550</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Skill3">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>550</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Skill4">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>550</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="IdBox">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>140</y>
+      <width>42</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>999</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="PM_ID">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>140</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PM Id</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="LevelBox">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>170</y>
+      <width>42</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="PM_LEVEL">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>170</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PM Level</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="formLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>270</y>
+      <width>178</width>
+      <height>256</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="PmOp">
+     <item row="0" column="0">
+      <widget class="QLabel" name="Name2">
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="name2"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="Nature2">
+       <property name="text">
+        <string>Nature</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="nature2"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="Property2">
+       <property name="text">
+        <string>Property</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="property2"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="Hp2">
+       <property name="text">
+        <string>Hp</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="hp2"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="Atk2">
+       <property name="text">
+        <string>Atk</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="Sat2">
+       <property name="text">
+        <string>Sat</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLabel" name="sat2"/>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="Def2">
+       <property name="text">
+        <string>Def</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLabel" name="def2"/>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="Sdf2">
+       <property name="text">
+        <string>Sdf</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLabel" name="sdf2"/>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="Spe2">
+       <property name="text">
+        <string>Spe</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLabel" name="spe2"/>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="SkillBar2_1">
+       <property name="text">
+        <string>SkillBar1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QLabel" name="skillbar2_1"/>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="SkillBar2_2">
+       <property name="text">
+        <string>SkillBar2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QLabel" name="skillbar2_2"/>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLabel" name="SkillBar2_3">
+       <property name="text">
+        <string>SkillBar3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="1">
+      <widget class="QLabel" name="skillbar2_3"/>
+     </item>
+     <item row="12" column="0">
+      <widget class="QLabel" name="SkillBar2_4">
+       <property name="text">
+        <string>SkillBar4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="1">
+      <widget class="QLabel" name="skillbar2_4"/>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLabel" name="atk2"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="CreatePm">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>210</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create PM</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Ppic">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>400</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ppic</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="PMpic">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>400</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PMpic</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="formLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>161</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="UserName">
+       <property name="text">
+        <string>Username</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="username">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="WinNum">
+       <property name="text">
+        <string>WinNum</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="winnum">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="LossNum">
+       <property name="text">
+        <string>LossNum</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="lossnum">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="WinRate">
+       <property name="text">
+        <string>WinRate</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="winrate">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="PMNum">
+       <property name="text">
+        <string>PM Num</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLabel" name="pmnum">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="FullLevel">
+       <property name="text">
+        <string>FullLevel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLabel" name="fulllevel">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="AchiNum">
+       <property name="text">
+        <string>AchiNum</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLabel" name="achinum">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="Titel1">
+       <property name="text">
+        <string>Titel1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLabel" name="titel1">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="Titel2">
+       <property name="text">
+        <string>Titel2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLabel" name="titel2">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="Titel3">
+       <property name="text">
+        <string>Titel3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QLabel" name="titel3">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>994</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
