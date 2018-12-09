@@ -1,0 +1,2 @@
+# QClient
+QtClient for Pokemon
