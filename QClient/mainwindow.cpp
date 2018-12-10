@@ -7,6 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     lw=new LoginWindow;
+	timer = new QTimer(this);
 	QObject::connect(lw, &LoginWindow::LoginInfo, this, &MainWindow::SendLoginInfo);
     QObject::connect(lw,&LoginWindow::showmainwindow,this,&MainWindow::showmainwindow);
     QObject::connect(lw,&LoginWindow::showpms,this,&MainWindow::showpms);
@@ -16,7 +17,10 @@ MainWindow::MainWindow(QWidget *parent)
 	QObject::connect(ui->Skill2, SIGNAL(clicked(bool)), this, SLOT(SkillBar2()));
 	QObject::connect(ui->Skill3, SIGNAL(clicked(bool)), this, SLOT(SkillBar3()));
 	QObject::connect(ui->Skill4, SIGNAL(clicked(bool)), this, SLOT(SkillBar4()));
-	QObject::connect(ui->UpgradeMatch, SIGNAL(clicked(bool)), this, SLOT(Fight1()));
+	QObject::connect(ui->UpgradeMatch, SIGNAL(clicked(bool)), this, SLOT(GradeUpMatch()));
+	QObject::connect(ui->StartMatch, SIGNAL(clicked(bool)), this, SLOT(StartMatch()));
+	QObject::connect(timer, SIGNAL(timeout()), this, SLOT(Fight()));
+	QObject::connect(ui->Exit, SIGNAL(clicked(bool)), this, SLOT(Exit()));
     lw->show();
 	if (ui->IdBox->value() == 3)
 	{
@@ -33,6 +37,7 @@ MainWindow::MainWindow(QWidget *parent)
 		PMptr = new Blastoise(ui->LevelBox->value());
 		ChangePmOp();
 	}
+
 }
 MainWindow::~MainWindow()
 {
@@ -79,7 +84,7 @@ void MainWindow::SendLoginInfo(const std::string &username, const std::string &p
 		case 9:ui->titel2->setStyleSheet("font:bold,color:darkMagenta");
 		case 10:ui->titel2->setStyleSheet("font:bold,color:red");
 		}
-		ui->titel2->setText(QString::fromStdString(UPtr->Ach[2]));
+		ui->titel2->setText(QString::fromStdString(UPtr->Ach[1]));
 	}
 }
 void MainWindow::showmainwindow()
@@ -199,46 +204,46 @@ void MainWindow::ChangeUserOp(QListWidgetItem *item)
 }
 void MainWindow::ChangePmOp()
 {
-	ui->name2->setText(QString::fromStdString(Pptr->name));
-	ui->hp2->setText(QString::number(Pptr->Hp.InitialValue));
-	ui->atk2->setText(QString::number(Pptr->Atk.InitialValue));
-	ui->sat2->setText(QString::number(Pptr->Sat.InitialValue));
-	ui->def2->setText(QString::number(Pptr->Def.InitialValue));
-	ui->sdf2->setText(QString::number(Pptr->Sdf.InitialValue));
-	ui->spe2->setText(QString::number(Pptr->Spe.InitialValue));
-	if (Pptr->skill_bar[0] == -1)
+	ui->name2->setText(QString::fromStdString(PMptr->name));
+	ui->hp2->setText(QString::number(PMptr->Hp.InitialValue));
+	ui->atk2->setText(QString::number(PMptr->Atk.InitialValue));
+	ui->sat2->setText(QString::number(PMptr->Sat.InitialValue));
+	ui->def2->setText(QString::number(PMptr->Def.InitialValue));
+	ui->sdf2->setText(QString::number(PMptr->Sdf.InitialValue));
+	ui->spe2->setText(QString::number(PMptr->Spe.InitialValue));
+	if (PMptr->skill_bar[0] == -1)
 		ui->skillbar2_1->setText("NULL");
-	else if (Pptr->skill_bar[0] == 0)
+	else if (PMptr->skill_bar[0] == 0)
 	{
 		ui->skillbar2_1->setText("Attack");
 	}
 	else
-		ui->skillbar2_1->setText(QString::fromStdString(Pptr->skills[Pptr->skill_list[Pptr->skill_bar[0]]].name));
-	if (Pptr->skill_bar[1] == -1)
+		ui->skillbar2_1->setText(QString::fromStdString(PMptr->skills[PMptr->skill_list[PMptr->skill_bar[0]]].name));
+	if (PMptr->skill_bar[1] == -1)
 		ui->skillbar2_2->setText("NULL");
-	else if (Pptr->skill_bar[1] == 0)
+	else if (PMptr->skill_bar[1] == 0)
 	{
 		ui->skillbar2_2->setText("Attack");
 	}
 	else
-		ui->skillbar2_2->setText(QString::fromStdString(Pptr->skills[Pptr->skill_list[Pptr->skill_bar[1]]].name));
-	if (Pptr->skill_bar[2] == -1)
+		ui->skillbar2_2->setText(QString::fromStdString(PMptr->skills[PMptr->skill_list[PMptr->skill_bar[1]]].name));
+	if (PMptr->skill_bar[2] == -1)
 		ui->skillbar2_3->setText("NULL");
-	else if (Pptr->skill_bar[2] == 0)
+	else if (PMptr->skill_bar[2] == 0)
 	{
 		ui->skillbar2_3->setText("Attack");
 	}
 	else
-		ui->skillbar2_3->setText(QString::fromStdString(Pptr->skills[Pptr->skill_list[Pptr->skill_bar[2]]].name));
-	if (Pptr->skill_bar[3] == -1)
+		ui->skillbar2_3->setText(QString::fromStdString(PMptr->skills[PMptr->skill_list[PMptr->skill_bar[2]]].name));
+	if (PMptr->skill_bar[3] == -1)
 		ui->skillbar2_4->setText("NULL");
-	else if (Pptr->skill_bar[3] == 0)
+	else if (PMptr->skill_bar[3] == 0)
 	{
 		ui->skillbar2_4->setText("Attack");
 	}
 	else
-		ui->skillbar2_4->setText(QString::fromStdString(Pptr->skills[Pptr->skill_list[Pptr->skill_bar[3]]].name));
-	switch (Pptr->nature)
+		ui->skillbar2_4->setText(QString::fromStdString(PMptr->skills[PMptr->skill_list[PMptr->skill_bar[3]]].name));
+	switch (PMptr->nature)
 	{
 	case 1:ui->nature2->setText("Hardy"); break;
 	case 2:ui->nature2->setText("Lonely"); break;
@@ -266,7 +271,7 @@ void MainWindow::ChangePmOp()
 	case 24:ui->nature2->setText("Careful"); break;
 	case 25:ui->nature2->setText("Quirky"); break;
 	}
-	switch (Pptr->Ppt)
+	switch (PMptr->Ppt)
 	{
 	case 1:ui->property2->setText("Normal"); break;
 	case 2:ui->property2->setText("Fire"); break;
@@ -306,36 +311,41 @@ void MainWindow::CreatePm()
 		ChangePmOp();
 	}
 }
-void MainWindow::Fight1()
+void MainWindow::GradeUpMatch()
 {
+	ui->StartMatch->setEnabled(true);
 	ui->Skill1->setText(QString::fromStdString(Pptr->skills[Pptr->skill_list[Pptr->skill_bar[0]]].name));
 	ui->Skill2->setText(QString::fromStdString(Pptr->skills[Pptr->skill_list[Pptr->skill_bar[1]]].name));
 	ui->Skill3->setText(QString::fromStdString(Pptr->skills[Pptr->skill_list[Pptr->skill_bar[2]]].name));
 	ui->Skill4->setText(QString::fromStdString(Pptr->skills[Pptr->skill_list[Pptr->skill_bar[3]]].name));
-
-	//根据速度分段映射两个定时器给用户和怪物
-	int time1 = Pptr->SpeedMap();
-	int time2 = PMptr->SpeedMap();
+	time1 = Pptr->SpeedMap();
+	time2 = PMptr->SpeedMap();
 	Pptr->FightInitial();
 	PMptr->FightInitial();
-	std::vector<std::string>strs;
 	strs.clear();
-	while (Pptr->Hp.FightValue != 0 && PMptr->Hp.FightValue != 0)
+}
+void MainWindow::StartMatch()
+{
+	timer->start(500);
+}
+//不学技能  考虑默认替换
+void MainWindow::Fight()
+{
+	if (Pptr->Hp.FightValue != 0 && PMptr->Hp.FightValue != 0)
 	{
 		time1--;
 		time2--;
-		Sleep(500);
 		if (time1 == 0 && Pptr->Hp.FightValue != 0)
 		{
 			time1 = Pptr->SpeedMap();
 			Pptr->Fight(PMptr,strs);
 			for (auto i = strs.begin();i != strs.end(); i++)
 			{
-				ui->FightInfo->insertPlainText(QString::fromStdString((*i)));
+				ui->FightInfo->append(QString::fromStdString((*i)));
 			}
 		}
 		strs.clear();
-		ui->UserHp->setValue((PMptr->Hp.FightValue / PMptr->Hp.InitialValue) * 100);
+		ui->PmHp->setValue((PMptr->Hp.FightValue * 100) / PMptr->Hp.InitialValue);
 		if (time2 == 0 && PMptr->Hp.FightValue != 0)
 		{
 			time2 = PMptr->SpeedMap();
@@ -343,11 +353,11 @@ void MainWindow::Fight1()
 			PMptr->Fight(Pptr,strs);
 			for (auto i = strs.begin(); i != strs.end(); i++)
 			{
-				ui->FightInfo->insertPlainText(QString::fromStdString((*i)));
+				ui->FightInfo->append(QString::fromStdString((*i)));
 			}
 		}
 		strs.clear();
-		ui->UserHp->setValue((Pptr->Hp.FightValue / Pptr->Hp.InitialValue) * 100);
+		ui->UserHp->setValue((Pptr->Hp.FightValue*100) / Pptr->Hp.InitialValue );
 	}
 	if (Pptr->Hp.FightValue == 0)
 	{
@@ -356,6 +366,9 @@ void MainWindow::Fight1()
 		ui->lossnum->setText(QString::number(UPtr->LossNum));
 		ui->winrate->setText(QString::number(UPtr->WinRate));
 		emit UserLoss(UPtr);
+		timer->stop();
+		ui->UserHp->setValue(100);
+		ui->PmHp->setValue(100);
 	}
 	else if (PMptr->Hp.FightValue == 0)
 	{
@@ -469,6 +482,9 @@ void MainWindow::Fight1()
 			ui->titel2->setText(QString::fromStdString(UPtr->Ach[2]));
 		}
 		emit UserWin(UPtr, pv);
+		timer->stop();
+		ui->UserHp->setValue(100);
+		ui->PmHp->setValue(100);
 		//数据通信，更新两张表√
 		//user_table胜场+1,可能更新满级精灵数 √
 		//可能更改成就等级，刷新标签 √
@@ -502,4 +518,8 @@ void MainWindow::SkillBar3()
 void MainWindow::SkillBar4()
 {
 	Pptr->select_skill = 3;
+}
+void MainWindow::Exit()
+{
+	emit exit();
 }

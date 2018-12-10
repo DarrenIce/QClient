@@ -18,27 +18,28 @@ Venusaur::Venusaur()
 	//能力面板值初始化
 	map();
 	//技能初始化
-	Attack.ppt = Ppt;
+	skills[0].ppt = Ppt;
 	al_have_skills = 0;
 	skill_list[0] = 0;
-	skill_list[1] = 1;
-	skill_list[2] = 2;
-	skill_list[3] = 3;
-	skill_list[4] = 4;
-	skill_list[5] = 5;
-	skill_list[6] = 6;
-	skill_list[7] = 7;
-	skill_list[8] = 8;
-	skill_list[9] = 9;
-	skill_list[10] = 10;
-	skill_list[11] = 11;
+	skill_list[1] = 131;
+	skill_list[2] = 1;
+	skill_list[3] = 2;
+	skill_list[4] = 3;
+	skill_list[5] = 4;
+	skill_list[6] = 5;
+	skill_list[7] = 6;
+	skill_list[8] = 7;
+	skill_list[9] = 8;
+	skill_list[10] = 9;
+	skill_list[11] = 10;
+	skill_list[12] = 11;
 
 	skill_bar[0] = 0;
 	skill_bar[1] = -1;
 	skill_bar[2] = -1;
 	skill_bar[3] = -1;
 
-	remainedpp[0] = Attack.pp;
+	remainedpp[0] = skills[0].pp;
 	remainedpp[1] = 0;
 	remainedpp[2] = 0;
 	remainedpp[3] = 0;
@@ -62,20 +63,21 @@ Venusaur::Venusaur(int level)
 	//能力面板值初始化
 	map();
 	//技能初始化
-	Attack.ppt = Ppt;
+	skills[0].ppt = Ppt;
 	al_have_skills = 0;
 	skill_list[0] = 0;
-	skill_list[1] = 1;
-	skill_list[2] = 2;
-	skill_list[3] = 3;
-	skill_list[4] = 4;
-	skill_list[5] = 5;
-	skill_list[6] = 6;
-	skill_list[7] = 7;
-	skill_list[8] = 8;
-	skill_list[9] = 9;
-	skill_list[10] = 10;
-	skill_list[11] = 11;
+	skill_list[1] = 131;
+	skill_list[2] = 1;
+	skill_list[3] = 2;
+	skill_list[4] = 3;
+	skill_list[5] = 4;
+	skill_list[6] = 5;
+	skill_list[7] = 6;
+	skill_list[8] = 7;
+	skill_list[9] = 8;
+	skill_list[10] = 9;
+	skill_list[11] = 10;
+	skill_list[12] = 11;
 
 	skill_bar[0] = 0;
 	skill_bar[1] = -1;
@@ -98,6 +100,8 @@ Venusaur::Venusaur(PMList pmlist)
 	onlyid = pmlist.onlyid;
 	name = "Venusaur";
 	nicky = pmlist.nicky;
+	grade = pmlist.grade;
+	Exp = pmlist.exp;
 	switch (pmlist.nature)
 	{
 	case 1:nature = Hardy; break;
@@ -160,20 +164,21 @@ Venusaur::Venusaur(PMList pmlist)
 	Res.RacialValue = 100;
 	Agi.RacialValue = 80;
 	map();
-	Attack.ppt = Ppt;
+	skills[0].ppt = Ppt;
 	al_have_skills = pmlist.skills;
 	skill_list[0] = 0;
-	skill_list[1] = 1;
-	skill_list[2] = 2;
-	skill_list[3] = 3;
-	skill_list[4] = 4;
-	skill_list[5] = 5;
-	skill_list[6] = 6;
-	skill_list[7] = 7;
-	skill_list[8] = 8;
-	skill_list[9] = 9;
-	skill_list[10] = 10;
-	skill_list[11] = 11;
+	skill_list[1] = 131;
+	skill_list[2] = 1;
+	skill_list[3] = 2;
+	skill_list[4] = 3;
+	skill_list[5] = 4;
+	skill_list[6] = 5;
+	skill_list[7] = 6;
+	skill_list[8] = 7;
+	skill_list[9] = 8;
+	skill_list[10] = 9;
+	skill_list[11] = 10;
+	skill_list[12] = 11;
 
 	skill_bar[0] = pmlist.skillbar[0];
 	skill_bar[1] = pmlist.skillbar[1];
@@ -202,29 +207,30 @@ Charizard::Charizard()
 	//能力面板值初始化
 	map();
 	//技能初始化
-	Attack.ppt = Ppt;
+	skills[0].ppt = Ppt;
 	al_have_skills = 0;
-	skill_list[0] = 12;
-	skill_list[1] = 13;
-	skill_list[2] = 14;
-	skill_list[3] = 15;
-	skill_list[4] = 16;
-	skill_list[5] = 17;
-	skill_list[6] = 18;
-	skill_list[7] = 19;
-	skill_list[8] = 20;
-	skill_list[9] = 21;
-	skill_list[10] = 22;
-	skill_list[11] = 23;
-	skill_list[12] = 24;
-	skill_list[13] = 25;
+	skill_list[0] = 0;
+	skill_list[1] = 12;
+	skill_list[2] = 13;
+	skill_list[3] = 14;
+	skill_list[4] = 15;
+	skill_list[5] = 16;
+	skill_list[6] = 17;
+	skill_list[7] = 18;
+	skill_list[8] = 19;
+	skill_list[9] = 20;
+	skill_list[10] = 21;
+	skill_list[11] = 22;
+	skill_list[12] = 23;
+	skill_list[13] = 24;
+	skill_list[14] = 25;
 
 	skill_bar[0] = 0;
 	skill_bar[1] = -1;
 	skill_bar[2] = -1;
 	skill_bar[3] = -1;
 
-	remainedpp[0] = Attack.pp;
+	remainedpp[0] = skills[0].pp;
 	remainedpp[1] = 0;
 	remainedpp[2] = 0;
 	remainedpp[3] = 0;
@@ -246,22 +252,23 @@ Charizard::Charizard(int level)
 	//能力面板值初始化
 	map();
 	//技能初始化
-	Attack.ppt = Ppt;
+	skills[0].ppt = Ppt;
 	al_have_skills = 0;
-	skill_list[0] = 12;
-	skill_list[1] = 13;
-	skill_list[2] = 14;
-	skill_list[3] = 15;
-	skill_list[4] = 16;
-	skill_list[5] = 17;
-	skill_list[6] = 18;
-	skill_list[7] = 19;
-	skill_list[8] = 20;
-	skill_list[9] = 21;
-	skill_list[10] = 22;
-	skill_list[11] = 23;
-	skill_list[12] = 24;
-	skill_list[13] = 25;
+	skill_list[0] = 0;
+	skill_list[1] = 12;
+	skill_list[2] = 13;
+	skill_list[3] = 14;
+	skill_list[4] = 15;
+	skill_list[5] = 16;
+	skill_list[6] = 17;
+	skill_list[7] = 18;
+	skill_list[8] = 19;
+	skill_list[9] = 20;
+	skill_list[10] = 21;
+	skill_list[11] = 22;
+	skill_list[12] = 23;
+	skill_list[13] = 24;
+	skill_list[14] = 25;
 
 	skill_bar[0] = 0;
 	skill_bar[1] = -1;
@@ -285,6 +292,8 @@ Charizard::Charizard(PMList pmlist)
 	onlyid = pmlist.onlyid;
 	name = "Charizard";
 	nicky = pmlist.nicky;
+	grade = pmlist.grade;
+	Exp = pmlist.exp;
 	switch (pmlist.nature)
 	{
 	case 1:nature = Hardy; break;
@@ -347,22 +356,23 @@ Charizard::Charizard(PMList pmlist)
 	Res.RacialValue = 85;
 	Agi.RacialValue = 100;
 	map();
-	Attack.ppt = Ppt;
+	skills[0].ppt = Ppt;
 	al_have_skills = pmlist.skills;
-	skill_list[0] = 12;
-	skill_list[1] = 13;
-	skill_list[2] = 14;
-	skill_list[3] = 15;
-	skill_list[4] = 16;
-	skill_list[5] = 17;
-	skill_list[6] = 18;
-	skill_list[7] = 19;
-	skill_list[8] = 20;
-	skill_list[9] = 21;
-	skill_list[10] = 22;
-	skill_list[11] = 23;
-	skill_list[12] = 24;
-	skill_list[13] = 25;
+	skill_list[0] = 0;
+	skill_list[1] = 12;
+	skill_list[2] = 13;
+	skill_list[3] = 14;
+	skill_list[4] = 15;
+	skill_list[5] = 16;
+	skill_list[6] = 17;
+	skill_list[7] = 18;
+	skill_list[8] = 19;
+	skill_list[9] = 20;
+	skill_list[10] = 21;
+	skill_list[11] = 22;
+	skill_list[12] = 23;
+	skill_list[13] = 24;
+	skill_list[14] = 25;
 
 	skill_bar[0] = pmlist.skillbar[0];
 	skill_bar[1] = pmlist.skillbar[1];
@@ -391,27 +401,28 @@ Blastoise::Blastoise()
 	//能力面板值初始化
 	map();
 	//技能初始化
-	Attack.ppt = Ppt;
+	skills[0].ppt = Ppt;
 	al_have_skills = 0;
-	skill_list[0] = 26;
-	skill_list[1] = 27;
-	skill_list[2] = 28;
-	skill_list[3] = 29;
-	skill_list[4] = 30;
-	skill_list[5] = 31;
-	skill_list[6] = 32;
-	skill_list[7] = 33;
-	skill_list[8] = 34;
-	skill_list[9] = 35;
-	skill_list[10] = 36;
-	skill_list[11] = 37;
+	skill_list[0] = 0;
+	skill_list[1] = 26;
+	skill_list[2] = 27;
+	skill_list[3] = 28;
+	skill_list[4] = 29;
+	skill_list[5] = 30;
+	skill_list[6] = 31;
+	skill_list[7] = 32;
+	skill_list[8] = 33;
+	skill_list[9] = 34;
+	skill_list[10] = 35;
+	skill_list[11] = 36;
+	skill_list[12] = 37;
 
 	skill_bar[0] = 0;
 	skill_bar[1] = -1;
 	skill_bar[2] = -1;
 	skill_bar[3] = -1;
 
-	remainedpp[0] = Attack.pp;
+	remainedpp[0] = skills[0].pp;
 	remainedpp[1] = 0;
 	remainedpp[2] = 0;
 	remainedpp[3] = 0;
@@ -434,20 +445,21 @@ Blastoise::Blastoise(int level)
 	//能力面板值初始化
 	map();
 	//技能初始化
-	Attack.ppt = Ppt;
+	skills[0].ppt = Ppt;
 	al_have_skills = 0;
-	skill_list[0] = 26;
-	skill_list[1] = 27;
-	skill_list[2] = 28;
-	skill_list[3] = 29;
-	skill_list[4] = 30;
-	skill_list[5] = 31;
-	skill_list[6] = 32;
-	skill_list[7] = 33;
-	skill_list[8] = 34;
-	skill_list[9] = 35;
-	skill_list[10] = 36;
-	skill_list[11] = 37;
+	skill_list[0] = 0;
+	skill_list[1] = 26;
+	skill_list[2] = 27;
+	skill_list[3] = 28;
+	skill_list[4] = 29;
+	skill_list[5] = 30;
+	skill_list[6] = 31;
+	skill_list[7] = 32;
+	skill_list[8] = 33;
+	skill_list[9] = 34;
+	skill_list[10] = 35;
+	skill_list[11] = 36;
+	skill_list[12] = 37;
 
 	skill_bar[0] = 0;
 	skill_bar[1] = -1;
@@ -471,6 +483,8 @@ Blastoise::Blastoise(PMList pmlist)
 	onlyid = pmlist.onlyid;
 	name = "Blastoise";
 	nicky = pmlist.nicky;
+	grade = pmlist.grade;
+	Exp = pmlist.exp;
 	switch (pmlist.nature)
 	{
 	case 1:nature = Hardy; break;
@@ -533,20 +547,21 @@ Blastoise::Blastoise(PMList pmlist)
 	Res.RacialValue = 105;
 	Agi.RacialValue = 78;
 	map();
-	Attack.ppt = Ppt;
+	skills[0].ppt = Ppt;
 	al_have_skills = pmlist.skills;
-	skill_list[0] = 26;
-	skill_list[1] = 27;
-	skill_list[2] = 28;
-	skill_list[3] = 29;
-	skill_list[4] = 30;
-	skill_list[5] = 31;
-	skill_list[6] = 32;
-	skill_list[7] = 33;
-	skill_list[8] = 34;
-	skill_list[9] = 35;
-	skill_list[10] = 36;
-	skill_list[11] = 37;
+	skill_list[0] = 0;
+	skill_list[1] = 26;
+	skill_list[2] = 27;
+	skill_list[3] = 28;
+	skill_list[4] = 29;
+	skill_list[5] = 30;
+	skill_list[6] = 31;
+	skill_list[7] = 32;
+	skill_list[8] = 33;
+	skill_list[9] = 34;
+	skill_list[10] = 35;
+	skill_list[11] = 36;
+	skill_list[12] = 37;
 
 	skill_bar[0] = pmlist.skillbar[0];
 	skill_bar[1] = pmlist.skillbar[1];

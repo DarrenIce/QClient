@@ -135,6 +135,8 @@ public:
     QLabel *Titel3;
     QLabel *titel3;
     QTextBrowser *FightInfo;
+    QPushButton *StartMatch;
+    QPushButton *Exit;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -143,6 +145,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
+        MainWindow->setEnabled(true);
         MainWindow->resize(994, 713);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
@@ -665,6 +668,15 @@ public:
         FightInfo = new QTextBrowser(centralWidget);
         FightInfo->setObjectName(QString::fromUtf8("FightInfo"));
         FightInfo->setGeometry(QRect(370, 0, 601, 261));
+        StartMatch = new QPushButton(centralWidget);
+        StartMatch->setObjectName(QString::fromUtf8("StartMatch"));
+        StartMatch->setEnabled(false);
+        StartMatch->setGeometry(QRect(630, 610, 75, 23));
+        StartMatch->setStyleSheet(QString::fromUtf8("QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }"));
+        Exit = new QPushButton(centralWidget);
+        Exit->setObjectName(QString::fromUtf8("Exit"));
+        Exit->setGeometry(QRect(180, 610, 75, 23));
+        Exit->setStyleSheet(QString::fromUtf8("QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }"));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
@@ -747,6 +759,8 @@ public:
         titel2->setText(QString());
         Titel3->setText(QApplication::translate("MainWindow", "Titel3", nullptr));
         titel3->setText(QString());
+        StartMatch->setText(QApplication::translate("MainWindow", "StartMatch", nullptr));
+        Exit->setText(QApplication::translate("MainWindow", "Exit", nullptr));
     } // retranslateUi
 
 };

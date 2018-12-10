@@ -134,7 +134,6 @@ public:
 	PPT Ppt;//属性
 	PPT Ppt2;//副属性
 	bool isside;//是否有副属性
-	Move Attack;//普通攻击
 
 	int CthBL;//会心等级
 	int CthAl;

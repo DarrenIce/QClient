@@ -119,3 +119,9 @@ void Client::UserWin(User* uptr, std::vector<Pokemon*> &vec)
 	::recv(client, buffer, sizeof(buffer), 0);
 	::send(client, (char*)pmlist, sizeof(PMList)*(pmlist[0].num + 1), 0);
 }
+void Client::exit()
+{
+	char buffer[10] = "3";
+	::send(client, buffer, sizeof(buffer), 0);
+	::closesocket(client);
+}

@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
     QObject::connect(mw,&MainWindow::displaypms,clt,&Client::displaypms);
 	QObject::connect(mw, &MainWindow::UserLoss, clt, &Client::UserLoss);
 	QObject::connect(mw, &MainWindow::UserWin, clt, &Client::UserWin);
+	QObject::connect(mw, &MainWindow::exit, clt, &Client::exit);
     mw->setVisible(false);
     return a.exec();
 }

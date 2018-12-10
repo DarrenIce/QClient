@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -767,6 +770,41 @@
       <width>601</width>
       <height>261</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="StartMatch">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>610</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }</string>
+    </property>
+    <property name="text">
+     <string>StartMatch</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Exit">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>610</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }</string>
+    </property>
+    <property name="text">
+     <string>Exit</string>
     </property>
    </widget>
   </widget>
