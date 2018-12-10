@@ -11,6 +11,7 @@
 #include <QLineEdit>
 #include <QtWidgets>
 #include <regex>
+#include <algorithm>
 
 #define SER_PORT 4396
 #define BUF_SIZE 1024
@@ -195,5 +196,6 @@ public:
 	void UserLoss(User* uptr);
 	void UserWin(User* uptr, std::vector<Pokemon*> &vec);
 	void exit();
+	void AddPm(Pokemon* ptr);
 };
 

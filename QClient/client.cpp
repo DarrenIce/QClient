@@ -125,3 +125,30 @@ void Client::exit()
 	::send(client, buffer, sizeof(buffer), 0);
 	::closesocket(client);
 }
+void Client::AddPm(Pokemon* ptr)
+{
+	PMList pm;
+	pm.id = ptr->id;
+	pm.grade = ptr->grade;
+	pm.exp = ptr->Exp;
+	pm.Str = ptr->Str.IndividualValue;
+	pm.Int = ptr->Int.IndividualValue;
+	pm.Phy = ptr->Phy.IndividualValue;
+	pm.Sta = ptr->Sta.IndividualValue;
+	pm.Res = ptr->Res.IndividualValue;
+	pm.Agi = ptr->Agi.IndividualValue;
+	pm.skills = ptr->al_have_skills;
+	pm.skillbar[0] = ptr->skill_bar[0];
+	pm.skillbar[1] = ptr->skill_bar[1];
+	pm.skillbar[2] = ptr->skill_bar[2];
+	pm.skillbar[3] = ptr->skill_bar[3];
+	strcpy(pm.name, ptr->name.c_str());
+	strcpy(pm.nicky, ptr->nicky.c_str());
+	pm.nature = ptr->nature;
+	pm.ppt = ptr->Ppt;
+
+	char buffer[10] = "ADD";
+	::send(client, buffer, sizeof(buffer), 0);
+	::recv(client, buffer, sizeof(buffer), 0);
+	::send(client, (char*)&pm, sizeof(PMList), 0);
+}

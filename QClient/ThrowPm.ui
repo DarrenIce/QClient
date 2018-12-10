@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ThrowWidget</class>
+ <widget class="QWidget" name="ThrowWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>675</width>
+    <height>613</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Choose a pm to throw</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 0);</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>540</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border: 2px solid grey;
+	background:rgb(131, 197, 197);
+	border-radius: 8px;}
+QPushButton:hover{border-color:rgb(183,203,188);}
+QPushButton:pressed{border-color:gray}</string>
+   </property>
+   <property name="text">
+    <string>Select this</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>540</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border: 2px solid grey;
+	background:rgb(131, 197, 197);
+	border-radius: 8px;}
+QPushButton:hover{border-color:rgb(183,203,188);}
+QPushButton:pressed{border-color:gray}</string>
+   </property>
+   <property name="text">
+    <string>Select this</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>540</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border: 2px solid grey;
+	background:rgb(131, 197, 197);
+	border-radius: 8px;}
+QPushButton:hover{border-color:rgb(183,203,188);}
+QPushButton:pressed{border-color:gray}</string>
+   </property>
+   <property name="text">
+    <string>Select this</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>151</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <row>
+    <property name="text">
+     <string>Name</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Id</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Nicky</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Grade</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Exp</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Hp</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Atk</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Sat</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Def</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Sdf</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Spe</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Skills</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Skill1</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Skill2</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Skill4</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>Data</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>20</y>
+     <width>151</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <row>
+    <property name="text">
+     <string>Name</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Id</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Nicky</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Grade</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Exp</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Hp</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Atk</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Sat</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Def</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Sdf</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Spe</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Skills</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Skill1</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Skill2</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Skill4</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>Data</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>20</y>
+     <width>151</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <row>
+    <property name="text">
+     <string>Name</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Id</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Nicky</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Grade</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Exp</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Hp</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Atk</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Sat</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Def</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Sdf</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Spe</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Skills</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Skill1</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Skill2</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Skill4</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>Data</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

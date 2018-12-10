@@ -13,6 +13,8 @@ int main(int argc, char *argv[])
 	QObject::connect(mw, &MainWindow::UserLoss, clt, &Client::UserLoss);
 	QObject::connect(mw, &MainWindow::UserWin, clt, &Client::UserWin);
 	QObject::connect(mw, &MainWindow::exit, clt, &Client::exit);
+	QObject::connect(mw, &MainWindow::AddPm, clt, &Client::AddPm);
     mw->setVisible(false);
+	a.setQuitOnLastWindowClosed(true);
     return a.exec();
 }

@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>994</width>
-    <height>713</height>
+    <width>1129</width>
+    <height>873</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,216 +20,31 @@
    <widget class="QListWidget" name="PMList">
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>190</x>
       <y>0</y>
       <width>161</width>
-      <height>271</height>
+      <height>261</height>
      </rect>
     </property>
-   </widget>
-   <widget class="QWidget" name="formLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>280</y>
-      <width>161</width>
-      <height>356</height>
-     </rect>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
     </property>
-    <layout class="QFormLayout" name="UserOp">
-     <item row="0" column="0">
-      <widget class="QLabel" name="Name">
-       <property name="text">
-        <string>Name</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QLabel" name="name"/>
-     </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="Id">
-       <property name="text">
-        <string>ID</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QLabel" name="id"/>
-     </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="Nicky">
-       <property name="text">
-        <string>Nicky</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="1">
-      <widget class="QLabel" name="nicky"/>
-     </item>
-     <item row="3" column="0">
-      <widget class="QLabel" name="Grade">
-       <property name="text">
-        <string>Grade</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="1">
-      <widget class="QLabel" name="grade"/>
-     </item>
-     <item row="4" column="0">
-      <widget class="QLabel" name="Exp">
-       <property name="text">
-        <string>Exp</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="1">
-      <widget class="QLabel" name="exp"/>
-     </item>
-     <item row="5" column="0">
-      <widget class="QLabel" name="Nature">
-       <property name="text">
-        <string>Nature</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="1">
-      <widget class="QLabel" name="nature"/>
-     </item>
-     <item row="6" column="0">
-      <widget class="QLabel" name="Property">
-       <property name="text">
-        <string>Property</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="1">
-      <widget class="QLabel" name="property"/>
-     </item>
-     <item row="7" column="0">
-      <widget class="QLabel" name="Hp">
-       <property name="text">
-        <string>Hp</string>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="1">
-      <widget class="QLabel" name="hp"/>
-     </item>
-     <item row="8" column="0">
-      <widget class="QLabel" name="Atk">
-       <property name="text">
-        <string>Atk</string>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="1">
-      <widget class="QLabel" name="atk"/>
-     </item>
-     <item row="9" column="0">
-      <widget class="QLabel" name="Sat">
-       <property name="text">
-        <string>Sat</string>
-       </property>
-      </widget>
-     </item>
-     <item row="9" column="1">
-      <widget class="QLabel" name="sat"/>
-     </item>
-     <item row="10" column="0">
-      <widget class="QLabel" name="Def">
-       <property name="text">
-        <string>Def</string>
-       </property>
-      </widget>
-     </item>
-     <item row="10" column="1">
-      <widget class="QLabel" name="def"/>
-     </item>
-     <item row="11" column="0">
-      <widget class="QLabel" name="Sdf">
-       <property name="text">
-        <string>Sdf</string>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="1">
-      <widget class="QLabel" name="sdf"/>
-     </item>
-     <item row="12" column="0">
-      <widget class="QLabel" name="Spe">
-       <property name="text">
-        <string>Spe</string>
-       </property>
-      </widget>
-     </item>
-     <item row="12" column="1">
-      <widget class="QLabel" name="spe"/>
-     </item>
-     <item row="13" column="0">
-      <widget class="QLabel" name="SkillNum">
-       <property name="text">
-        <string>SkillNum</string>
-       </property>
-      </widget>
-     </item>
-     <item row="13" column="1">
-      <widget class="QLabel" name="skillnum"/>
-     </item>
-     <item row="14" column="0">
-      <widget class="QLabel" name="SkillBar1">
-       <property name="text">
-        <string>SkillBar1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="14" column="1">
-      <widget class="QLabel" name="skillbar1"/>
-     </item>
-     <item row="15" column="0">
-      <widget class="QLabel" name="SkillBar2">
-       <property name="text">
-        <string>SkillBar2</string>
-       </property>
-      </widget>
-     </item>
-     <item row="16" column="0">
-      <widget class="QLabel" name="SkillBar3">
-       <property name="text">
-        <string>SkillBar3</string>
-       </property>
-      </widget>
-     </item>
-     <item row="17" column="0">
-      <widget class="QLabel" name="SkillBar4">
-       <property name="text">
-        <string>SkillBar4</string>
-       </property>
-      </widget>
-     </item>
-     <item row="15" column="1">
-      <widget class="QLabel" name="skillbar2"/>
-     </item>
-     <item row="16" column="1">
-      <widget class="QLabel" name="skillbar3"/>
-     </item>
-     <item row="17" column="1">
-      <widget class="QLabel" name="skillbar4"/>
-     </item>
-    </layout>
    </widget>
    <widget class="QPushButton" name="UpgradeMatch">
     <property name="geometry">
      <rect>
-      <x>730</x>
-      <y>590</y>
+      <x>690</x>
+      <y>700</y>
       <width>91</width>
       <height>23</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }</string>
+     <string notr="true">QPushButton{border: 2px solid grey;
+	background:rgb(131, 197, 197);
+	border-radius: 8px;}
+QPushButton:hover{border-color:rgb(183,203,188);}
+QPushButton:pressed{border-color:gray}</string>
     </property>
     <property name="text">
      <string>Upgrade Match</string>
@@ -238,14 +53,18 @@
    <widget class="QPushButton" name="DuelMatch">
     <property name="geometry">
      <rect>
-      <x>730</x>
-      <y>620</y>
+      <x>690</x>
+      <y>730</y>
       <width>91</width>
       <height>23</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }</string>
+     <string notr="true">QPushButton{border: 2px solid grey;
+	background:rgb(131, 197, 197);
+	border-radius: 8px;}
+QPushButton:hover{border-color:rgb(183,203,188);}
+QPushButton:pressed{border-color:gray}</string>
     </property>
     <property name="text">
      <string>Duel Match</string>
@@ -254,8 +73,8 @@
    <widget class="QProgressBar" name="UserHp">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>280</y>
+      <x>390</x>
+      <y>310</y>
       <width>251</width>
       <height>20</height>
      </rect>
@@ -265,12 +84,14 @@
      border: 2px solid grey;
      border-radius: 5px;
      text-align: center;
+	 color: rgb(255, 255, 255);
  }
  
  QProgressBar::chunk {
      background-color: rgb(255, 85, 127);
      width: 20px;
- }</string>
+ }
+</string>
     </property>
     <property name="value">
      <number>100</number>
@@ -282,10 +103,10 @@
    <widget class="QProgressBar" name="PmHp">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>280</y>
+      <x>660</x>
+      <y>310</y>
       <width>251</width>
-      <height>23</height>
+      <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -293,6 +114,7 @@
      border: 2px solid grey;
      border-radius: 5px;
      text-align: center;
+	 color: rgb(255, 255, 255);
  }
  
  QProgressBar::chunk {
@@ -307,14 +129,18 @@
    <widget class="QPushButton" name="Skill1">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>550</y>
+      <x>480</x>
+      <y>540</y>
       <width>75</width>
       <height>23</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }</string>
+     <string notr="true">QPushButton{border: 2px solid grey;
+	background:rgb(131, 197, 197);
+	border-radius: 8px;}
+QPushButton:hover{border-color:rgb(183,203,188);}
+QPushButton:pressed{border-color:gray}</string>
     </property>
     <property name="text">
      <string>PushButton</string>
@@ -323,14 +149,18 @@
    <widget class="QPushButton" name="Skill2">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>550</y>
+      <x>570</x>
+      <y>540</y>
       <width>75</width>
       <height>23</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }</string>
+     <string notr="true">QPushButton{border: 2px solid grey;
+	background:rgb(131, 197, 197);
+	border-radius: 8px;}
+QPushButton:hover{border-color:rgb(183,203,188);}
+QPushButton:pressed{border-color:gray}</string>
     </property>
     <property name="text">
      <string>PushButton</string>
@@ -339,14 +169,18 @@
    <widget class="QPushButton" name="Skill3">
     <property name="geometry">
      <rect>
-      <x>480</x>
-      <y>550</y>
+      <x>660</x>
+      <y>540</y>
       <width>75</width>
       <height>23</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }</string>
+     <string notr="true">QPushButton{border: 2px solid grey;
+	background:rgb(131, 197, 197);
+	border-radius: 8px;}
+QPushButton:hover{border-color:rgb(183,203,188);}
+QPushButton:pressed{border-color:gray}</string>
     </property>
     <property name="text">
      <string>PushButton</string>
@@ -355,14 +189,18 @@
    <widget class="QPushButton" name="Skill4">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>550</y>
+      <x>750</x>
+      <y>540</y>
       <width>75</width>
       <height>23</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }</string>
+     <string notr="true">QPushButton{border: 2px solid grey;
+	background:rgb(131, 197, 197);
+	border-radius: 8px;}
+QPushButton:hover{border-color:rgb(183,203,188);}
+QPushButton:pressed{border-color:gray}</string>
     </property>
     <property name="text">
      <string>PushButton</string>
@@ -371,11 +209,14 @@
    <widget class="QSpinBox" name="IdBox">
     <property name="geometry">
      <rect>
-      <x>930</x>
-      <y>540</y>
+      <x>890</x>
+      <y>660</y>
       <width>42</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="minimum">
      <number>1</number>
@@ -387,8 +228,8 @@
    <widget class="QLabel" name="PM_ID">
     <property name="geometry">
      <rect>
-      <x>870</x>
-      <y>540</y>
+      <x>830</x>
+      <y>660</y>
       <width>54</width>
       <height>12</height>
      </rect>
@@ -400,11 +241,14 @@
    <widget class="QSpinBox" name="LevelBox">
     <property name="geometry">
      <rect>
-      <x>930</x>
-      <y>570</y>
+      <x>890</x>
+      <y>690</y>
       <width>42</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="minimum">
      <number>1</number>
@@ -416,8 +260,8 @@
    <widget class="QLabel" name="PM_LEVEL">
     <property name="geometry">
      <rect>
-      <x>870</x>
-      <y>570</y>
+      <x>830</x>
+      <y>690</y>
       <width>54</width>
       <height>12</height>
      </rect>
@@ -426,159 +270,21 @@
      <string>PM Level</string>
     </property>
    </widget>
-   <widget class="QWidget" name="formLayoutWidget_2">
-    <property name="geometry">
-     <rect>
-      <x>810</x>
-      <y>270</y>
-      <width>178</width>
-      <height>256</height>
-     </rect>
-    </property>
-    <layout class="QFormLayout" name="PmOp">
-     <item row="0" column="0">
-      <widget class="QLabel" name="Name2">
-       <property name="text">
-        <string>Name</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QLabel" name="name2"/>
-     </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="Nature2">
-       <property name="text">
-        <string>Nature</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QLabel" name="nature2"/>
-     </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="Property2">
-       <property name="text">
-        <string>Property</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="1">
-      <widget class="QLabel" name="property2"/>
-     </item>
-     <item row="3" column="0">
-      <widget class="QLabel" name="Hp2">
-       <property name="text">
-        <string>Hp</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="1">
-      <widget class="QLabel" name="hp2"/>
-     </item>
-     <item row="4" column="0">
-      <widget class="QLabel" name="Atk2">
-       <property name="text">
-        <string>Atk</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="0">
-      <widget class="QLabel" name="Sat2">
-       <property name="text">
-        <string>Sat</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="1">
-      <widget class="QLabel" name="sat2"/>
-     </item>
-     <item row="6" column="0">
-      <widget class="QLabel" name="Def2">
-       <property name="text">
-        <string>Def</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="1">
-      <widget class="QLabel" name="def2"/>
-     </item>
-     <item row="7" column="0">
-      <widget class="QLabel" name="Sdf2">
-       <property name="text">
-        <string>Sdf</string>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="1">
-      <widget class="QLabel" name="sdf2"/>
-     </item>
-     <item row="8" column="0">
-      <widget class="QLabel" name="Spe2">
-       <property name="text">
-        <string>Spe</string>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="1">
-      <widget class="QLabel" name="spe2"/>
-     </item>
-     <item row="9" column="0">
-      <widget class="QLabel" name="SkillBar2_1">
-       <property name="text">
-        <string>SkillBar1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="9" column="1">
-      <widget class="QLabel" name="skillbar2_1"/>
-     </item>
-     <item row="10" column="0">
-      <widget class="QLabel" name="SkillBar2_2">
-       <property name="text">
-        <string>SkillBar2</string>
-       </property>
-      </widget>
-     </item>
-     <item row="10" column="1">
-      <widget class="QLabel" name="skillbar2_2"/>
-     </item>
-     <item row="11" column="0">
-      <widget class="QLabel" name="SkillBar2_3">
-       <property name="text">
-        <string>SkillBar3</string>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="1">
-      <widget class="QLabel" name="skillbar2_3"/>
-     </item>
-     <item row="12" column="0">
-      <widget class="QLabel" name="SkillBar2_4">
-       <property name="text">
-        <string>SkillBar4</string>
-       </property>
-      </widget>
-     </item>
-     <item row="12" column="1">
-      <widget class="QLabel" name="skillbar2_4"/>
-     </item>
-     <item row="4" column="1">
-      <widget class="QLabel" name="atk2"/>
-     </item>
-    </layout>
-   </widget>
    <widget class="QPushButton" name="CreatePm">
     <property name="geometry">
      <rect>
-      <x>900</x>
-      <y>610</y>
+      <x>860</x>
+      <y>730</y>
       <width>75</width>
       <height>23</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }</string>
+     <string notr="true">QPushButton{border: 2px solid grey;
+	background:rgb(131, 197, 197);
+	border-radius: 8px;}
+QPushButton:hover{border-color:rgb(183,203,188);}
+QPushButton:pressed{border-color:gray}</string>
     </property>
     <property name="text">
      <string>Create PM</string>
@@ -587,7 +293,7 @@
    <widget class="QLabel" name="Ppic">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>500</x>
       <y>400</y>
       <width>54</width>
       <height>12</height>
@@ -600,8 +306,8 @@
    <widget class="QLabel" name="PMpic">
     <property name="geometry">
      <rect>
-      <x>640</x>
-      <y>400</y>
+      <x>770</x>
+      <y>410</y>
       <width>54</width>
       <height>12</height>
      </rect>
@@ -610,164 +316,12 @@
      <string>PMpic</string>
     </property>
    </widget>
-   <widget class="QWidget" name="formLayoutWidget_3">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>0</y>
-      <width>161</width>
-      <height>271</height>
-     </rect>
-    </property>
-    <layout class="QFormLayout" name="UserInfo">
-     <item row="0" column="0">
-      <widget class="QLabel" name="UserName">
-       <property name="text">
-        <string>Username</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QLabel" name="username">
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="WinNum">
-       <property name="text">
-        <string>WinNum</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QLabel" name="winnum">
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="LossNum">
-       <property name="text">
-        <string>LossNum</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="1">
-      <widget class="QLabel" name="lossnum">
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="0">
-      <widget class="QLabel" name="WinRate">
-       <property name="text">
-        <string>WinRate</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="1">
-      <widget class="QLabel" name="winrate">
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="0">
-      <widget class="QLabel" name="PMNum">
-       <property name="text">
-        <string>PM Num</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="1">
-      <widget class="QLabel" name="pmnum">
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="0">
-      <widget class="QLabel" name="FullLevel">
-       <property name="text">
-        <string>FullLevel</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="1">
-      <widget class="QLabel" name="fulllevel">
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="0">
-      <widget class="QLabel" name="AchiNum">
-       <property name="text">
-        <string>AchiNum</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="1">
-      <widget class="QLabel" name="achinum">
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="0">
-      <widget class="QLabel" name="Titel1">
-       <property name="text">
-        <string>Titel1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="1">
-      <widget class="QLabel" name="titel1">
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="0">
-      <widget class="QLabel" name="Titel2">
-       <property name="text">
-        <string>Titel2</string>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="1">
-      <widget class="QLabel" name="titel2">
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="9" column="0">
-      <widget class="QLabel" name="Titel3">
-       <property name="text">
-        <string>Titel3</string>
-       </property>
-      </widget>
-     </item>
-     <item row="9" column="1">
-      <widget class="QLabel" name="titel3">
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
    <widget class="QTextBrowser" name="FightInfo">
     <property name="geometry">
      <rect>
       <x>370</x>
       <y>0</y>
-      <width>601</width>
+      <width>731</width>
       <height>261</height>
      </rect>
     </property>
@@ -778,14 +332,18 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>610</y>
+      <x>590</x>
+      <y>720</y>
       <width>75</width>
       <height>23</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }</string>
+     <string notr="true">QPushButton{border: 2px solid grey;
+	background:rgb(131, 197, 197);
+	border-radius: 8px;}
+QPushButton:hover{border-color:rgb(183,203,188);}
+QPushButton:pressed{border-color:gray}</string>
     </property>
     <property name="text">
      <string>StartMatch</string>
@@ -794,26 +352,324 @@
    <widget class="QPushButton" name="Exit">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>610</y>
+      <x>10</x>
+      <y>780</y>
       <width>75</width>
       <height>23</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton{background-color:rgb(170, 170, 255);color:white;border-radius:10px;border: 2px groove gray;border-style: outset;}                                           QPushButton:hover{background-color:rgb(170, 255, 255); color: black;}                                          QPushButton:pressed{background-color:rgb(255, 170, 127);border-style: inset; }</string>
+     <string notr="true">QPushButton{border: 2px solid grey;
+	background:rgb(131, 197, 197);
+	border-radius: 8px;}
+QPushButton:hover{border-color:rgb(183,203,188);}
+QPushButton:pressed{border-color:gray}</string>
     </property>
     <property name="text">
      <string>Exit</string>
     </property>
    </widget>
+   <widget class="QTableWidget" name="UserTable">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>171</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <row>
+     <property name="text">
+      <string>Username</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>WinNum</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>LossNum</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>WinRate</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>PM Num</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>FullLevel</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>AchiNum</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Title1</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Title3</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string> </string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTableWidget" name="UserPm">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>270</y>
+      <width>161</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <row>
+     <property name="text">
+      <string>Name</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Nicky</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Grade</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Exp</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Nature</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Property</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Hp</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Atk</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Sat</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Def</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Sdf</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Spe</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>SkillNum</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Skill1</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Skill2</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Skill4</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string> </string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTableWidget" name="SerPm">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>270</y>
+      <width>161</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <row>
+     <property name="text">
+      <string>Name</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Nicky</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Grade</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Exp</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Nature</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Property</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Hp</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Atk</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Sat</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Def</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Sdf</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Spe</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>SkillNum</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Skill1</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Skill2</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Skill4</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string> </string>
+     </property>
+    </column>
+   </widget>
+   <zorder>UserPm</zorder>
+   <zorder>PMList</zorder>
+   <zorder>UpgradeMatch</zorder>
+   <zorder>DuelMatch</zorder>
+   <zorder>UserHp</zorder>
+   <zorder>PmHp</zorder>
+   <zorder>Skill1</zorder>
+   <zorder>Skill2</zorder>
+   <zorder>Skill3</zorder>
+   <zorder>Skill4</zorder>
+   <zorder>IdBox</zorder>
+   <zorder>PM_ID</zorder>
+   <zorder>LevelBox</zorder>
+   <zorder>PM_LEVEL</zorder>
+   <zorder>CreatePm</zorder>
+   <zorder>Ppic</zorder>
+   <zorder>PMpic</zorder>
+   <zorder>FightInfo</zorder>
+   <zorder>StartMatch</zorder>
+   <zorder>Exit</zorder>
+   <zorder>UserTable</zorder>
+   <zorder>SerPm</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>994</width>
+     <width>1129</width>
      <height>23</height>
     </rect>
    </property>
