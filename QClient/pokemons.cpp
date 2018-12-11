@@ -93,6 +93,11 @@ Venusaur::Venusaur(int level)
 			count++;
 		}
 	}
+	for (int i = 1; i <= 12; i++)
+	{
+		if (skills[skill_list[i]].levelreq < grade)
+			al_have_skills++;
+	}
 }
 Venusaur::Venusaur(PMList pmlist)
 {
@@ -285,6 +290,11 @@ Charizard::Charizard(int level)
 			count++;
 		}
 	}
+	for (int i = 1; i <= 14; i++)
+	{
+		if (skills[skill_list[i]].levelreq < grade)
+			al_have_skills++;
+	}
 }
 Charizard::Charizard(PMList pmlist)
 {
@@ -475,6 +485,11 @@ Blastoise::Blastoise(int level)
 			remainedpp[count] = skills[skill_list[i]].pp;
 			count++;
 		}
+	}
+	for (int i = 1; i <= 12; i++)
+	{
+		if (skills[skill_list[i]].levelreq < grade)
+			al_have_skills++;
 	}
 }
 Blastoise::Blastoise(PMList pmlist)

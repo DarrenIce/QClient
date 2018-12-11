@@ -1,4 +1,10 @@
 <RCC>
-    <qresource prefix="MainWindow">
+    <qresource prefix="/images">
+        <file>images/login.jpg</file>
+        <file>images/logo.jpg</file>
+        <file>images/003Venusaur.jpg</file>
+        <file>images/003Venusaur.png</file>
+        <file>images/006Charizard.png</file>
+        <file>images/009Blastoise.png</file>
     </qresource>
 </RCC>

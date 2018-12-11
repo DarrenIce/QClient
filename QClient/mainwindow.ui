@@ -9,22 +9,28 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1129</width>
-    <height>873</height>
+    <width>1121</width>
+    <height>976</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QListWidget" name="PMList">
     <property name="geometry">
      <rect>
       <x>190</x>
-      <y>0</y>
+      <y>40</y>
       <width>161</width>
       <height>261</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="editTriggers">
      <set>QAbstractItemView::NoEditTriggers</set>
@@ -34,7 +40,7 @@
     <property name="geometry">
      <rect>
       <x>690</x>
-      <y>700</y>
+      <y>840</y>
       <width>91</width>
       <height>23</height>
      </rect>
@@ -54,7 +60,7 @@ QPushButton:pressed{border-color:gray}</string>
     <property name="geometry">
      <rect>
       <x>690</x>
-      <y>730</y>
+      <y>870</y>
       <width>91</width>
       <height>23</height>
      </rect>
@@ -74,7 +80,7 @@ QPushButton:pressed{border-color:gray}</string>
     <property name="geometry">
      <rect>
       <x>390</x>
-      <y>310</y>
+      <y>380</y>
       <width>251</width>
       <height>20</height>
      </rect>
@@ -84,7 +90,7 @@ QPushButton:pressed{border-color:gray}</string>
      border: 2px solid grey;
      border-radius: 5px;
      text-align: center;
-	 color: rgb(255, 255, 255);
+	 
  }
  
  QProgressBar::chunk {
@@ -104,7 +110,7 @@ QPushButton:pressed{border-color:gray}</string>
     <property name="geometry">
      <rect>
       <x>660</x>
-      <y>310</y>
+      <y>380</y>
       <width>251</width>
       <height>21</height>
      </rect>
@@ -114,7 +120,6 @@ QPushButton:pressed{border-color:gray}</string>
      border: 2px solid grey;
      border-radius: 5px;
      text-align: center;
-	 color: rgb(255, 255, 255);
  }
  
  QProgressBar::chunk {
@@ -130,7 +135,7 @@ QPushButton:pressed{border-color:gray}</string>
     <property name="geometry">
      <rect>
       <x>480</x>
-      <y>540</y>
+      <y>690</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -150,7 +155,7 @@ QPushButton:pressed{border-color:gray}</string>
     <property name="geometry">
      <rect>
       <x>570</x>
-      <y>540</y>
+      <y>690</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -170,7 +175,7 @@ QPushButton:pressed{border-color:gray}</string>
     <property name="geometry">
      <rect>
       <x>660</x>
-      <y>540</y>
+      <y>690</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -190,7 +195,7 @@ QPushButton:pressed{border-color:gray}</string>
     <property name="geometry">
      <rect>
       <x>750</x>
-      <y>540</y>
+      <y>690</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -210,13 +215,13 @@ QPushButton:pressed{border-color:gray}</string>
     <property name="geometry">
      <rect>
       <x>890</x>
-      <y>660</y>
+      <y>800</y>
       <width>42</width>
       <height>22</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="minimum">
      <number>1</number>
@@ -229,10 +234,13 @@ QPushButton:pressed{border-color:gray}</string>
     <property name="geometry">
      <rect>
       <x>830</x>
-      <y>660</y>
+      <y>800</y>
       <width>54</width>
       <height>12</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>PM Id</string>
@@ -242,13 +250,13 @@ QPushButton:pressed{border-color:gray}</string>
     <property name="geometry">
      <rect>
       <x>890</x>
-      <y>690</y>
+      <y>830</y>
       <width>42</width>
       <height>22</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="minimum">
      <number>1</number>
@@ -261,7 +269,7 @@ QPushButton:pressed{border-color:gray}</string>
     <property name="geometry">
      <rect>
       <x>830</x>
-      <y>690</y>
+      <y>830</y>
       <width>54</width>
       <height>12</height>
      </rect>
@@ -274,7 +282,7 @@ QPushButton:pressed{border-color:gray}</string>
     <property name="geometry">
      <rect>
       <x>860</x>
-      <y>730</y>
+      <y>870</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -293,37 +301,40 @@ QPushButton:pressed{border-color:gray}</string>
    <widget class="QLabel" name="Ppic">
     <property name="geometry">
      <rect>
-      <x>500</x>
-      <y>400</y>
-      <width>54</width>
-      <height>12</height>
+      <x>470</x>
+      <y>460</y>
+      <width>111</width>
+      <height>121</height>
      </rect>
     </property>
     <property name="text">
-     <string>Ppic</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="PMpic">
     <property name="geometry">
      <rect>
-      <x>770</x>
-      <y>410</y>
-      <width>54</width>
-      <height>12</height>
+      <x>740</x>
+      <y>460</y>
+      <width>111</width>
+      <height>121</height>
      </rect>
     </property>
     <property name="text">
-     <string>PMpic</string>
+     <string/>
     </property>
    </widget>
    <widget class="QTextBrowser" name="FightInfo">
     <property name="geometry">
      <rect>
       <x>370</x>
-      <y>0</y>
+      <y>40</y>
       <width>731</width>
       <height>261</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QPushButton" name="StartMatch">
@@ -333,7 +344,7 @@ QPushButton:pressed{border-color:gray}</string>
     <property name="geometry">
      <rect>
       <x>590</x>
-      <y>720</y>
+      <y>860</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -352,7 +363,7 @@ QPushButton:pressed{border-color:gray}</string>
    <widget class="QPushButton" name="Exit">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>60</x>
       <y>780</y>
       <width>75</width>
       <height>23</height>
@@ -376,10 +387,13 @@ QPushButton:pressed{border-color:gray}</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>10</y>
+      <y>40</y>
       <width>171</width>
-      <height>301</height>
+      <height>331</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="editTriggers">
      <set>QAbstractItemView::NoEditTriggers</set>
@@ -426,12 +440,26 @@ QPushButton:pressed{border-color:gray}</string>
     </row>
     <row>
      <property name="text">
+      <string>Titel2</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
       <string>Title3</string>
      </property>
     </row>
     <column>
      <property name="text">
-      <string> </string>
+      <string/>
+     </property>
+     <property name="foreground">
+      <brush brushstyle="NoBrush">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
      </property>
     </column>
    </widget>
@@ -439,10 +467,13 @@ QPushButton:pressed{border-color:gray}</string>
     <property name="geometry">
      <rect>
       <x>190</x>
-      <y>270</y>
+      <y>340</y>
       <width>161</width>
-      <height>541</height>
+      <height>571</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="editTriggers">
      <set>QAbstractItemView::NoEditTriggers</set>
@@ -529,12 +560,26 @@ QPushButton:pressed{border-color:gray}</string>
     </row>
     <row>
      <property name="text">
+      <string>Skill3</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
       <string>Skill4</string>
      </property>
     </row>
     <column>
      <property name="text">
-      <string> </string>
+      <string/>
+     </property>
+     <property name="foreground">
+      <brush brushstyle="NoBrush">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
      </property>
     </column>
    </widget>
@@ -542,10 +587,13 @@ QPushButton:pressed{border-color:gray}</string>
     <property name="geometry">
      <rect>
       <x>940</x>
-      <y>270</y>
+      <y>340</y>
       <width>161</width>
-      <height>541</height>
+      <height>571</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="editTriggers">
      <set>QAbstractItemView::NoEditTriggers</set>
@@ -632,14 +680,167 @@ QPushButton:pressed{border-color:gray}</string>
     </row>
     <row>
      <property name="text">
+      <string>Skill3</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
       <string>Skill4</string>
      </property>
     </row>
     <column>
      <property name="text">
-      <string> </string>
+      <string/>
+     </property>
+     <property name="foreground">
+      <brush brushstyle="NoBrush">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
      </property>
     </column>
+   </widget>
+   <widget class="QListWidget" name="UserList">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>410</y>
+      <width>171</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>380</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 127);
+	border: 2px solid green;
+    border-radius: 4px;</string>
+    </property>
+    <property name="text">
+     <string>UserList</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>10</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 127);
+	border: 2px solid green;
+    border-radius: 4px;</string>
+    </property>
+    <property name="text">
+     <string>UserInfo</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>10</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 127);
+	border: 2px solid green;
+    border-radius: 4px;</string>
+    </property>
+    <property name="text">
+     <string>PokemonList</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>310</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 127);
+	border: 2px solid green;
+    border-radius: 4px;</string>
+    </property>
+    <property name="text">
+     <string>Pokemon</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>310</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 127);
+	border: 2px solid green;
+    border-radius: 4px;</string>
+    </property>
+    <property name="text">
+     <string>Pokemon</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>10</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 127);
+	border: 2px solid green;
+    border-radius: 4px;</string>
+    </property>
+    <property name="text">
+     <string>FightInfo</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
    <zorder>UserPm</zorder>
    <zorder>PMList</zorder>
@@ -663,13 +864,20 @@ QPushButton:pressed{border-color:gray}</string>
    <zorder>Exit</zorder>
    <zorder>UserTable</zorder>
    <zorder>SerPm</zorder>
+   <zorder>UserList</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1129</width>
+     <width>1121</width>
      <height>23</height>
     </rect>
    </property>
@@ -685,6 +893,8 @@ QPushButton:pressed{border-color:gray}</string>
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="mainwindow.qrc"/>
+ </resources>
  <connections/>
 </ui>

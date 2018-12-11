@@ -42,21 +42,24 @@
     <ClCompile Include="pokemon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="loginwindow.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="client.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="throwpkm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="skillreplace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="otheruser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="loginwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="mainwindow.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <QtMoc Include="loginwindow.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="client.h">
@@ -65,12 +68,30 @@
     <QtMoc Include="throwpkm.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="skillreplace.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="otheruser.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="loginwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="mainwindow.ui">
       <Filter>Form Files</Filter>
     </QtUic>
     <QtUic Include="throwpkm.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="skillreplace.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="otheruser.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="loginwindow.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>

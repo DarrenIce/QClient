@@ -20,7 +20,10 @@ Client::Client()
         QMessageBox::critical(NULL,"Client error","Failed connect");
     }
 }
-
+Client::~Client()
+{
+	::closesocket(client);
+}
 void Client::SendLoginInfo(const std::string &username,const std::string &password,int &state, UserInfo &userinfo)
 {
 	Info login;
@@ -57,6 +60,8 @@ void Client::displaypms(const std::string &username,std::vector<Pokemon*>& vec)
     PMList pmlist[MAX_PMS];
     char buff[10]="5";
     ::send(client,buff,sizeof(buff),0);
+	::recv(client, buff, sizeof(buff), 0);
+	::send(client, username.c_str(), username.size(), 0);
 	//int rev = ::recv(client, buff, sizeof(buff), 0);
 	int rev = ::recv(client, (char*)pmlist, (unsigned int)sizeof(PMList) * MAX_PMS, 0);
     
@@ -86,7 +91,14 @@ void Client::displaypms(const std::string &username,std::vector<Pokemon*>& vec)
 void Client::UserLoss(User* uptr)
 {
 	char buffer[10] = "LOSS1";
+	UserInfo user;
+	user.LossNum = uptr->LossNum;
+	user.PmNum = uptr->PmNum;
+	user.PerPmNum = uptr->PerPmNum;
+	strcpy(user.username, uptr->username.c_str());
 	::send(client, buffer, sizeof(buffer), 0);
+	::recv(client, buffer, sizeof(buffer), 0);
+	::send(client, (char*)&user, sizeof(UserInfo), 0);
 }
 void Client::UserWin(User* uptr, std::vector<Pokemon*> &vec)
 {
@@ -124,6 +136,8 @@ void Client::exit()
 	char buffer[10] = "3";
 	::send(client, buffer, sizeof(buffer), 0);
 	::closesocket(client);
+	QApplication* app;
+	app->exit(0);
 }
 void Client::AddPm(Pokemon* ptr)
 {
@@ -151,4 +165,22 @@ void Client::AddPm(Pokemon* ptr)
 	::send(client, buffer, sizeof(buffer), 0);
 	::recv(client, buffer, sizeof(buffer), 0);
 	::send(client, (char*)&pm, sizeof(PMList), 0);
+}
+void Client::erasepm(int onlyid)
+{
+	char buffer[10] = "ERASE";
+	::send(client, buffer, sizeof(buffer), 0);
+	::recv(client, buffer, sizeof(buffer), 0);
+	::send(client, (char*)&onlyid, sizeof(onlyid), 0);
+}
+void Client::requestuser(std::vector<User*> &uiv)
+{
+	char buffer[10] = "4";
+	::send(client, buffer, sizeof(buffer), 0);
+	UserInfo users[MAX_USERS];
+	::recv(client, (char*)users, sizeof(users), 0);
+	for (int i = 1; i <= users[0].LossNum; i++)
+	{
+		uiv.push_back(new User(users[i]));
+	}
 }

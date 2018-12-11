@@ -1,6 +1,6 @@
 #include "mainwindow.h"
 #include <QApplication>
-
+//添加六角图表示个体值情况
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -13,8 +13,12 @@ int main(int argc, char *argv[])
 	QObject::connect(mw, &MainWindow::UserLoss, clt, &Client::UserLoss);
 	QObject::connect(mw, &MainWindow::UserWin, clt, &Client::UserWin);
 	QObject::connect(mw, &MainWindow::exit, clt, &Client::exit);
+	QObject::connect(mw->lw, &LoginWindow::ext, clt, &Client::exit);
 	QObject::connect(mw, &MainWindow::AddPm, clt, &Client::AddPm);
+	QObject::connect(mw, &MainWindow::erasepm, clt, &Client::erasepm);
+	QObject::connect(mw, &MainWindow::requestuser, clt, &Client::requestuser);
     mw->setVisible(false);
 	a.setQuitOnLastWindowClosed(true);
+	mw->lw->setStyleSheet("QWidget#LoginWindow{background-image:url(:/images/images/login.jpg)}");
     return a.exec();
 }

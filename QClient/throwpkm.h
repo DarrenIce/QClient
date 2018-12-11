@@ -11,8 +11,5 @@ class ThrowPkm : public QWidget
 public:
 	ThrowPkm(QWidget *parent = Q_NULLPTR);
 	~ThrowPkm();
-
-	void throwpkm(User* uptr, std::vector<Pokemon*> &vec);
-private:
 	Ui::ThrowPkm ui;
 };
