@@ -1,6 +1,10 @@
 #include "mainwindow.h"
 #include <QApplication>
 //添加六角图表示个体值情况
+//添加精灵
+//添加动画
+//人性化提示
+//ui美化
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
