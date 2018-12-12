@@ -268,17 +268,24 @@ void MainWindow::ChangeUserOp(QListWidgetItem *item)
 	{
 		ui->Skill4->setText(QString::fromStdString(Pptr->skills[Pptr->skill_list[Pptr->skill_bar[3]]].name));
 	}
-	if (Pptr->id == 3)
+	switch (Pptr->id)
 	{
-		ui->Ppic->setPixmap(QPixmap(":/images/images/003Venusaur.png"));
-	}
-	else if (Pptr->id == 6)
-	{
-		ui->Ppic->setPixmap(QPixmap(":/images/images/006Charizard.png"));
-	}
-	else if (Pptr->id == 9)
-	{
-		ui->Ppic->setPixmap(QPixmap(":/images/images/009Blastoise.png"));
+	case 1: ui->Ppic->setPixmap(QPixmap(":/images/images/001Bulbasaur.png")); break;
+	case 2: ui->Ppic->setPixmap(QPixmap(":/images/images/002Ivysaur.png")); break;
+	case 3: ui->Ppic->setPixmap(QPixmap(":/images/images/003Venusaur.png")); break;
+	case 4: ui->Ppic->setPixmap(QPixmap(":/images/images/004Charmander.png")); break;
+	case 5: ui->Ppic->setPixmap(QPixmap(":/images/images/005Charmeleon.png")); break;
+	case 6: ui->Ppic->setPixmap(QPixmap(":/images/images/006Charizard.png")); break;
+	case 7: ui->Ppic->setPixmap(QPixmap(":/images/images/007Squirtle.png")); break;
+	case 8: ui->Ppic->setPixmap(QPixmap(":/images/images/008Wartortle.png")); break;
+	case 9: ui->Ppic->setPixmap(QPixmap(":/images/images/009Blastoise.png")); break;
+	case 10: ui->Ppic->setPixmap(QPixmap(":/images/images/010Pidgey.png")); break;
+	case 11: ui->Ppic->setPixmap(QPixmap(":/images/images/011Pidgeotto.png")); break;
+	case 12: ui->Ppic->setPixmap(QPixmap(":/images/images/012Pidgeot.png")); break;
+	case 13: ui->Ppic->setPixmap(QPixmap(":/images/images/013Pikachu.png")); break;
+	case 14: ui->Ppic->setPixmap(QPixmap(":/images/images/014Raichu.png")); break;
+	case 15: ui->Ppic->setPixmap(QPixmap(":/images/images/015Clefairy.png")); break;
+	case 16: ui->Ppic->setPixmap(QPixmap(":/images/images/016Clefable.png")); break;
 	}
 }
 void MainWindow::ChangePmOp()
@@ -360,35 +367,46 @@ void MainWindow::ChangePmOp()
 	case 17:ui->SerPm->setItem(6, 0, new QTableWidgetItem("Steel")); break;
 	case 18:ui->SerPm->setItem(6, 0, new QTableWidgetItem("Fairy")); break;
 	}
-	if (PMptr->id == 3)
+	switch (PMptr->id)
 	{
-		ui->PMpic->setPixmap(QPixmap(":/images/images/003Venusaur.png"));
-	}
-	else if (PMptr->id == 6)
-	{
-		ui->PMpic->setPixmap(QPixmap(":/images/images/006Charizard.png"));
-	}
-	else if (PMptr->id == 9)
-	{
-		ui->PMpic->setPixmap(QPixmap(":/images/images/009Blastoise.png"));
+	case 1: ui->PMpic->setPixmap(QPixmap(":/images/images/001Bulbasaur.png")); break;
+	case 2: ui->PMpic->setPixmap(QPixmap(":/images/images/002Ivysaur.png")); break;
+	case 3: ui->PMpic->setPixmap(QPixmap(":/images/images/003Venusaur.png")); break;
+	case 4: ui->PMpic->setPixmap(QPixmap(":/images/images/004Charmander.png")); break;
+	case 5: ui->PMpic->setPixmap(QPixmap(":/images/images/005Charmeleon.png")); break;
+	case 6: ui->PMpic->setPixmap(QPixmap(":/images/images/006Charizard.png")); break;
+	case 7: ui->PMpic->setPixmap(QPixmap(":/images/images/007Squirtle.png")); break;
+	case 8: ui->PMpic->setPixmap(QPixmap(":/images/images/008Wartortle.png")); break;
+	case 9: ui->PMpic->setPixmap(QPixmap(":/images/images/009Blastoise.png")); break;
+	case 10: ui->PMpic->setPixmap(QPixmap(":/images/images/010Pidgey.png")); break;
+	case 11: ui->PMpic->setPixmap(QPixmap(":/images/images/011Pidgeotto.png")); break;
+	case 12: ui->PMpic->setPixmap(QPixmap(":/images/images/012Pidgeot.png")); break;
+	case 13: ui->PMpic->setPixmap(QPixmap(":/images/images/013Pikachu.png")); break;
+	case 14: ui->PMpic->setPixmap(QPixmap(":/images/images/014Raichu.png")); break;
+	case 15: ui->PMpic->setPixmap(QPixmap(":/images/images/015Clefairy.png")); break;
+	case 16: ui->PMpic->setPixmap(QPixmap(":/images/images/016Clefable.png")); break;
 	}
 }
 void MainWindow::CreatePm()
 {
-	if (ui->IdBox->value() == 3)
+	switch (ui->IdBox->value())
 	{
-		PMptr = new Venusaur(ui->LevelBox->value());
-		ChangePmOp();
-	}
-	else if (ui->IdBox->value() == 6)
-	{
-		PMptr = new Charizard(ui->LevelBox->value());
-		ChangePmOp();
-	}
-	else if (ui->IdBox->value() == 9)
-	{
-		PMptr = new Blastoise(ui->LevelBox->value());
-		ChangePmOp();
+	case 1:PMptr = new Bulbasaur(ui->LevelBox->value()); ChangePmOp(); break;
+	case 2:PMptr = new Ivysaur(ui->LevelBox->value()); ChangePmOp(); break;
+	case 3:PMptr = new Venusaur(ui->LevelBox->value()); ChangePmOp(); break;
+	case 4:PMptr = new Charmander(ui->LevelBox->value()); ChangePmOp(); break;
+	case 5:PMptr = new Charmeleon(ui->LevelBox->value()); ChangePmOp(); break;
+	case 6:PMptr = new Charizard(ui->LevelBox->value()); ChangePmOp(); break;
+	case 7:PMptr = new Squirtle(ui->LevelBox->value()); ChangePmOp(); break;
+	case 8:PMptr = new Wartortle(ui->LevelBox->value()); ChangePmOp(); break;
+	case 9:PMptr = new Blastoise(ui->LevelBox->value()); ChangePmOp(); break;
+	case 10:PMptr = new Pidgey(ui->LevelBox->value()); ChangePmOp(); break;
+	case 11:PMptr = new Pidgeotto(ui->LevelBox->value()); ChangePmOp(); break;
+	case 12:PMptr = new Pidgeot(ui->LevelBox->value()); ChangePmOp(); break;
+	case 13:PMptr = new Pikachu(ui->LevelBox->value()); ChangePmOp(); break;
+	case 14:PMptr = new Raichu(ui->LevelBox->value()); ChangePmOp(); break;
+	case 15:PMptr = new Clefairy(ui->LevelBox->value()); ChangePmOp(); break;
+	case 16:PMptr = new Clefable(ui->LevelBox->value()); ChangePmOp(); break;
 	}
 	ui->UpgradeMatch->setEnabled(true);
 	ui->DuelMatch->setEnabled(true);
@@ -590,20 +608,24 @@ void MainWindow::Fight()
 				}
 				random_shuffle(temp.begin(), temp.end());
 				int k = temp.at(0);
-				if (k == 3)
+				switch (k)
 				{
-					Pptr = new Venusaur();
-					pv.push_back(Pptr);
-				}
-				else if (k == 6)
-				{
-					Pptr = new Charizard();
-					pv.push_back(Pptr);
-				}
-				else if (k == 9)
-				{
-					Pptr = new Blastoise();
-					pv.push_back(Pptr);
+				case 1:Pptr = new Bulbasaur(); pv.push_back(Pptr); break;
+				case 2:Pptr = new Ivysaur(); pv.push_back(Pptr); break;
+				case 3:Pptr = new Venusaur(); pv.push_back(Pptr); break;
+				case 4:Pptr = new Charmander(); pv.push_back(Pptr); break;
+				case 5:Pptr = new Charmeleon(); pv.push_back(Pptr); break;
+				case 6:Pptr = new Charizard(); pv.push_back(Pptr); break;
+				case 7:Pptr = new Squirtle(); pv.push_back(Pptr); break;
+				case 8:Pptr = new Wartortle(); pv.push_back(Pptr); break;
+				case 9:Pptr = new Blastoise(); pv.push_back(Pptr); break;
+				case 10:Pptr = new Pidgey(); pv.push_back(Pptr); break;
+				case 11:Pptr = new Pidgeotto(); pv.push_back(Pptr); break;
+				case 12:Pptr = new Pidgeot(); pv.push_back(Pptr); break;
+				case 13:Pptr = new Pikachu(); pv.push_back(Pptr); break;
+				case 14:Pptr = new Raichu(); pv.push_back(Pptr); break;
+				case 15:Pptr = new Clefairy(); pv.push_back(Pptr); break;
+				case 16:Pptr = new Clefable(); pv.push_back(Pptr); break;
 				}
 				AddPm(Pptr);
 			}

@@ -2,9 +2,21 @@
     <qresource prefix="/images">
         <file>images/login.jpg</file>
         <file>images/logo.jpg</file>
-        <file>images/003Venusaur.jpg</file>
         <file>images/003Venusaur.png</file>
         <file>images/006Charizard.png</file>
         <file>images/009Blastoise.png</file>
+        <file>images/001Bulbasaur.png</file>
+        <file>images/002Ivysaur.png</file>
+        <file>images/004Charmander.png</file>
+        <file>images/005Charmeleon.png</file>
+        <file>images/007Squirtle.png</file>
+        <file>images/008Wartortle.png</file>
+        <file>images/010Pidgey.png</file>
+        <file>images/011Pidgeotto.png</file>
+        <file>images/012Pidgeot.png</file>
+        <file>images/013Pikachu.png</file>
+        <file>images/014Raichu.png</file>
+        <file>images/015Clefairy.png</file>
+        <file>images/016Clefable.png</file>
     </qresource>
 </RCC>

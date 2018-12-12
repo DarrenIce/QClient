@@ -161,6 +161,7 @@ public:
 	void AddExp(int gra);//增加经验
 	void map();//从属性映射到能力值
 	void SaveLastLevelValue();//保存上一等级能力值
+	int RacialSum();
 
     //void FirstSave(std::string username, sqlite3 *db);
 	//void Save();

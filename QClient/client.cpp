@@ -73,18 +73,25 @@ void Client::displaypms(const std::string &username,std::vector<Pokemon*>& vec)
     {
         for (int i = 1; i <= pmlist[0].num; i++)
         {
-            if ( 3 == pmlist[i].id)
-            {
-                vec.push_back(new Venusaur(pmlist[i]));
-            }
-            else if (pmlist[i].id == 6)
-            {
-                vec.push_back(new Charizard(pmlist[i]));
-            }
-            else if (pmlist[i].id == 9)
-            {
-                vec.push_back(new Blastoise(pmlist[i]));
-            }
+			switch (pmlist[i].id)
+			{
+			case 1:vec.push_back(new Bulbasaur(pmlist[i])); break;
+			case 2:vec.push_back(new Ivysaur(pmlist[i])); break;
+			case 3:vec.push_back(new Venusaur(pmlist[i])); break;
+			case 4:vec.push_back(new Charmander(pmlist[i])); break;
+			case 5:vec.push_back(new Charmeleon(pmlist[i])); break;
+			case 6:vec.push_back(new Charizard(pmlist[i])); break;
+			case 7:vec.push_back(new Squirtle(pmlist[i])); break;
+			case 8:vec.push_back(new Wartortle(pmlist[i])); break;
+			case 9:vec.push_back(new Blastoise(pmlist[i])); break;
+			case 10:vec.push_back(new Pidgey(pmlist[i])); break;
+			case 11:vec.push_back(new Pidgeotto(pmlist[i])); break;
+			case 12:vec.push_back(new Pidgeot(pmlist[i])); break;
+			case 13:vec.push_back(new Pikachu(pmlist[i])); break;
+			case 14:vec.push_back(new Raichu(pmlist[i])); break;
+			case 15:vec.push_back(new Clefairy(pmlist[i])); break;
+			case 16:vec.push_back(new Clefable(pmlist[i])); break;
+			}
         }
     }
 }
