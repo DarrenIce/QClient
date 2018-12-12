@@ -82,7 +82,7 @@ Bulbasaur::Bulbasaur(int level)
 	skill_bar[3] = -1;
 
 	int count = 0;
-	for (int i = 11; i >= 0 && count<4; i--)
+	for (int i = 12; i >= 0 && count<4; i--)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 		{
@@ -91,7 +91,7 @@ Bulbasaur::Bulbasaur(int level)
 			count++;
 		}
 	}
-	for (int i = 1; i <= 14; i++)
+	for (int i = 1; i <= 12; i++)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 			al_have_skills++;
@@ -275,7 +275,7 @@ Ivysaur::Ivysaur(int level)
 	skill_bar[3] = -1;
 
 	int count = 0;
-	for (int i = 11; i >= 0 && count<4; i--)
+	for (int i = 12; i >= 0 && count<4; i--)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 		{
@@ -284,7 +284,7 @@ Ivysaur::Ivysaur(int level)
 			count++;
 		}
 	}
-	for (int i = 1; i <= 14; i++)
+	for (int i = 1; i <= 12; i++)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 			al_have_skills++;
@@ -470,7 +470,7 @@ Venusaur::Venusaur(int level)
 	skill_bar[2] = -1;
 	skill_bar[3] = -1;
 	int count = 0;
-	for (int i = 11; i >= 0&&count<4; i--)
+	for (int i = 12; i >= 0&&count<4; i--)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 		{
@@ -667,7 +667,7 @@ Charmander::Charmander(int level)
 	skill_bar[3] = -1;
 
 	int count = 0;
-	for (int i = 11; i >= 0 && count<4; i--)
+	for (int i = 14; i >= 0 && count<4; i--)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 		{
@@ -866,7 +866,7 @@ Charmeleon::Charmeleon(int level)
 	skill_bar[3] = -1;
 
 	int count = 0;
-	for (int i = 11; i >= 0 && count<4; i--)
+	for (int i = 14; i >= 0 && count<4; i--)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 		{
@@ -1065,7 +1065,7 @@ Charizard::Charizard(int level)
 	skill_bar[3] = -1;
 
 	int count = 0;
-	for (int i = 11; i >= 0 && count<4; i--)
+	for (int i = 14; i >= 0 && count<4; i--)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 		{
@@ -1260,7 +1260,7 @@ Squirtle::Squirtle(int level)
 	skill_bar[3] = -1;
 
 	int count = 0;
-	for (int i = 11; i >= 0 && count<4; i--)
+	for (int i = 12; i >= 0 && count<4; i--)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 		{
@@ -1269,7 +1269,7 @@ Squirtle::Squirtle(int level)
 			count++;
 		}
 	}
-	for (int i = 1; i <= 14; i++)
+	for (int i = 1; i <= 12; i++)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 			al_have_skills++;
@@ -1453,7 +1453,7 @@ Wartortle::Wartortle(int level)
 	skill_bar[3] = -1;
 
 	int count = 0;
-	for (int i = 11; i >= 0 && count<4; i--)
+	for (int i = 12; i >= 0 && count<4; i--)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 		{
@@ -1462,7 +1462,7 @@ Wartortle::Wartortle(int level)
 			count++;
 		}
 	}
-	for (int i = 1; i <= 14; i++)
+	for (int i = 1; i <= 12; i++)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 			al_have_skills++;
@@ -1647,7 +1647,7 @@ Blastoise::Blastoise(int level)
 	skill_bar[3] = -1;
 
 	int count = 0;
-	for (int i = 11; i >= 0 && count<4; i--)
+	for (int i = 12; i >= 0 && count<4; i--)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 		{
@@ -1842,7 +1842,7 @@ Pidgey::Pidgey(int level)
 	skill_bar[3] = -1;
 
 	int count = 0;
-	for (int i = 11; i >= 0 && count<4; i--)
+	for (int i = 13; i >= 0 && count<4; i--)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 		{
@@ -1851,7 +1851,7 @@ Pidgey::Pidgey(int level)
 			count++;
 		}
 	}
-	for (int i = 1; i <= 14; i++)
+	for (int i = 1; i <= 13; i++)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 			al_have_skills++;
@@ -2038,7 +2038,7 @@ Pidgeotto::Pidgeotto(int level)
 	skill_bar[3] = -1;
 
 	int count = 0;
-	for (int i = 11; i >= 0 && count<4; i--)
+	for (int i = 13; i >= 0 && count<4; i--)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 		{
@@ -2047,7 +2047,7 @@ Pidgeotto::Pidgeotto(int level)
 			count++;
 		}
 	}
-	for (int i = 1; i <= 14; i++)
+	for (int i = 1; i <= 13; i++)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 			al_have_skills++;
@@ -2234,7 +2234,7 @@ Pidgeot::Pidgeot(int level)
 	skill_bar[3] = -1;
 
 	int count = 0;
-	for (int i = 11; i >= 0 && count<4; i--)
+	for (int i = 13; i >= 0 && count<4; i--)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 		{
@@ -2243,7 +2243,7 @@ Pidgeot::Pidgeot(int level)
 			count++;
 		}
 	}
-	for (int i = 1; i <= 14; i++)
+	for (int i = 1; i <= 13; i++)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 			al_have_skills++;
@@ -2437,7 +2437,7 @@ Pikachu::Pikachu(int level)
 			count++;
 		}
 	}
-	for (int i = 1; i <= 14; i++)
+	for (int i = 1; i <= 11; i++)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 			al_have_skills++;
@@ -2627,7 +2627,7 @@ Raichu::Raichu(int level)
 			count++;
 		}
 	}
-	for (int i = 1; i <= 14; i++)
+	for (int i = 1; i <= 11; i++)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 			al_have_skills++;
@@ -2810,7 +2810,7 @@ Clefairy::Clefairy(int level)
 	skill_bar[3] = -1;
 
 	int count = 0;
-	for (int i = 11; i >= 0 && count<4; i--)
+	for (int i = 12; i >= 0 && count<4; i--)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 		{
@@ -2819,7 +2819,7 @@ Clefairy::Clefairy(int level)
 			count++;
 		}
 	}
-	for (int i = 1; i <= 14; i++)
+	for (int i = 1; i <= 12; i++)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 			al_have_skills++;
@@ -3003,7 +3003,7 @@ Clefable::Clefable(int level)
 	skill_bar[3] = -1;
 
 	int count = 0;
-	for (int i = 11; i >= 0 && count<4; i--)
+	for (int i = 12; i >= 0 && count<4; i--)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 		{
@@ -3012,7 +3012,7 @@ Clefable::Clefable(int level)
 			count++;
 		}
 	}
-	for (int i = 1; i <= 14; i++)
+	for (int i = 1; i <= 12; i++)
 	{
 		if (skills[skill_list[i]].levelreq < grade)
 			al_have_skills++;

@@ -159,7 +159,28 @@ void MainWindow::ChangeUserOp(QListWidgetItem *item)
 {
 	int r = ui->PMList->row(item);
 	Pptr = pv.at(r);
-	ui->UserPm->setItem(0, 0, new QTableWidgetItem(QString::fromStdString(Pptr->name)));
+	QTableWidgetItem *item2 = new QTableWidgetItem(QString::fromStdString(Pptr->name));
+	if (Pptr->RacialSum() < 400)
+	{
+		item2->setTextColor(QColor(112, 168, 0));
+	}
+	else if (Pptr->RacialSum() < 500)
+	{
+		item2->setTextColor(QColor(136, 204, 204));
+	}
+	else if (Pptr->RacialSum() < 600)
+	{
+		item2->setTextColor(QColor(222, 222, 110));
+	}
+	else if (Pptr->RacialSum() < 700)
+	{
+		item2->setTextColor(QColor(121, 121, 181));
+	}
+	else
+	{
+		item2->setTextColor(QColor(255, 0, 0));
+	}
+	ui->UserPm->setItem(0, 0, item2);
 	ui->UserPm->setItem(1, 0, new QTableWidgetItem(QString::number(Pptr->id)));
 	ui->UserPm->setItem(2, 0, new QTableWidgetItem(QString::fromStdString(Pptr->nicky)));
 	ui->UserPm->setItem(3, 0, new QTableWidgetItem(QString::number(Pptr->grade)));
@@ -290,7 +311,28 @@ void MainWindow::ChangeUserOp(QListWidgetItem *item)
 }
 void MainWindow::ChangePmOp()
 {
-	ui->SerPm->setItem(0, 0, new QTableWidgetItem(QString::fromStdString(PMptr->name)));
+	QTableWidgetItem *item2 = new QTableWidgetItem(QString::fromStdString(PMptr->name));
+	if (PMptr->RacialSum() < 400)
+	{
+		item2->setTextColor(QColor(112, 168, 0));
+	}
+	else if (PMptr->RacialSum() < 500)
+	{
+		item2->setTextColor(QColor(136, 204, 204));
+	}
+	else if (PMptr->RacialSum() < 600)
+	{
+		item2->setTextColor(QColor(222, 222, 110));
+	}
+	else if (PMptr->RacialSum() < 700)
+	{
+		item2->setTextColor(QColor(121, 121, 181));
+	}
+	else
+	{
+		item2->setTextColor(QColor(255, 0, 0));
+	}
+	ui->SerPm->setItem(0, 0, item2);
 	ui->SerPm->setItem(1, 0, new QTableWidgetItem(QString::number(PMptr->id)));
 	ui->SerPm->setItem(2, 0, new QTableWidgetItem(QString::fromStdString(PMptr->nicky)));
 	ui->SerPm->setItem(3, 0, new QTableWidgetItem(QString::number(PMptr->grade)));
@@ -778,7 +820,28 @@ void MainWindow::Throwpm()
 	Pokemon* p;
 	p = pv.at(pm[0]);
 	{
-		tp->ui.UserPm_1->setItem(0, 0, new QTableWidgetItem(QString::fromStdString(p->name)));
+		QTableWidgetItem *item2 = new QTableWidgetItem(QString::fromStdString(p->name));
+		if (p->RacialSum() < 400)
+		{
+			item2->setTextColor(QColor(112, 168, 0));
+		}
+		else if (p->RacialSum() < 500)
+		{
+			item2->setTextColor(QColor(136, 204, 204));
+		}
+		else if (p->RacialSum() < 600)
+		{
+			item2->setTextColor(QColor(222, 222, 110));
+		}
+		else if (p->RacialSum() < 700)
+		{
+			item2->setTextColor(QColor(121, 121, 181));
+		}
+		else
+		{
+			item2->setTextColor(QColor(255, 0, 0));
+		}
+		tp->ui.UserPm_1->setItem(0, 0, item2);
 		tp->ui.UserPm_1->setItem(1, 0, new QTableWidgetItem(QString::number(p->id)));
 		tp->ui.UserPm_1->setItem(2, 0, new QTableWidgetItem(QString::fromStdString(p->nicky)));
 		tp->ui.UserPm_1->setItem(3, 0, new QTableWidgetItem(QString::number(p->grade)));
@@ -860,7 +923,28 @@ void MainWindow::Throwpm()
 	{
 		p = pv.at(pm[1]);
 		{
-			tp->ui.UserPm_2->setItem(0, 0, new QTableWidgetItem(QString::fromStdString(p->name)));
+			QTableWidgetItem *item2 = new QTableWidgetItem(QString::fromStdString(p->name));
+			if (p->RacialSum() < 400)
+			{
+				item2->setTextColor(QColor(112, 168, 0));
+			}
+			else if (p->RacialSum() < 500)
+			{
+				item2->setTextColor(QColor(136, 204, 204));
+			}
+			else if (p->RacialSum() < 600)
+			{
+				item2->setTextColor(QColor(222, 222, 110));
+			}
+			else if (p->RacialSum() < 700)
+			{
+				item2->setTextColor(QColor(121, 121, 181));
+			}
+			else
+			{
+				item2->setTextColor(QColor(255, 0, 0));
+			}
+			tp->ui.UserPm_2->setItem(0, 0, item2);
 			tp->ui.UserPm_2->setItem(1, 0, new QTableWidgetItem(QString::number(p->id)));
 			tp->ui.UserPm_2->setItem(2, 0, new QTableWidgetItem(QString::fromStdString(p->nicky)));
 			tp->ui.UserPm_2->setItem(3, 0, new QTableWidgetItem(QString::number(p->grade)));
@@ -943,7 +1027,28 @@ void MainWindow::Throwpm()
 	{
 		p = pv.at(pm[2]);
 		{
-			tp->ui.UserPm_3->setItem(0, 0, new QTableWidgetItem(QString::fromStdString(p->name)));
+			QTableWidgetItem *item2 = new QTableWidgetItem(QString::fromStdString(p->name));
+			if (p->RacialSum() < 400)
+			{
+				item2->setTextColor(QColor(112, 168, 0));
+			}
+			else if (p->RacialSum() < 500)
+			{
+				item2->setTextColor(QColor(136, 204, 204));
+			}
+			else if (p->RacialSum() < 600)
+			{
+				item2->setTextColor(QColor(222, 222, 110));
+			}
+			else if (p->RacialSum() < 700)
+			{
+				item2->setTextColor(QColor(121, 121, 181));
+			}
+			else
+			{
+				item2->setTextColor(QColor(255, 0, 0));
+			}
+			tp->ui.UserPm_3->setItem(0, 0, item2);
 			tp->ui.UserPm_3->setItem(1, 0, new QTableWidgetItem(QString::number(p->id)));
 			tp->ui.UserPm_3->setItem(2, 0, new QTableWidgetItem(QString::fromStdString(p->nicky)));
 			tp->ui.UserPm_3->setItem(3, 0, new QTableWidgetItem(QString::number(p->grade)));
@@ -1181,6 +1286,28 @@ void MainWindow::ChangeOtherOp(QListWidgetItem *item)
 {
 	int r = ou->ui.PMList->row(item);
 	optr = opv.at(r);
+	QTableWidgetItem *item2 = new QTableWidgetItem(QString::fromStdString(optr->name));
+	if (optr->RacialSum() < 400)
+	{
+		item2->setTextColor(QColor(112, 168, 0));
+	}
+	else if (optr->RacialSum() < 500)
+	{
+		item2->setTextColor(QColor(136, 204, 204));
+	}
+	else if (optr->RacialSum() < 600)
+	{
+		item2->setTextColor(QColor(222, 222, 110));
+	}
+	else if (optr->RacialSum() < 700)
+	{
+		item2->setTextColor(QColor(121, 121, 181));
+	}
+	else
+	{
+		item2->setTextColor(QColor(255, 0, 0));
+	}
+	ou->ui.UserPm->setItem(0, 0, item2);
 	ou->ui.UserPm->setItem(0, 0, new QTableWidgetItem(QString::fromStdString(optr->name)));
 	ou->ui.UserPm->setItem(1, 0, new QTableWidgetItem(QString::number(optr->id)));
 	ou->ui.UserPm->setItem(2, 0, new QTableWidgetItem(QString::fromStdString(optr->nicky)));
